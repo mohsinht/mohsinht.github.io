@@ -1,0 +1,93 @@
+        @import url('https://fonts.googleapis.com/css?family=Montserrat');
+        body{
+            background-color: #22313F;
+            font-family: Montserrat;
+        }
+        .container-fluid{
+            margin:auto;
+        }
+        .container{
+            margin-top:50px;
+            background-color:aliceblue;
+            border-radius:15px;
+            padding:50px;
+        }
+        @media (max-width: 768px) {
+        .container-fluid {
+            max-width: 100%;
+                padding-right: 0px;
+                padding-left: 0px;
+        }
+        .container{
+            padding-left:10px;
+            padding-right:10px;
+        }
+        hr{
+            display:none;
+        }
+        }
+        h1{
+            font-weight:900;
+        }
+        .mydp{
+            width:250px;
+        }
+        a{
+            color:#22313f;
+        }
+        hr{
+            border-top:1px solid rgba(255, 255, 255, 0.24);
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #008CBA;
+        }
+        .ovtext {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .portfBox:hover .overlay {
+            opacity: 1;
+        }
+        .navbar-fixed-top,
+        .navbar-fixed-bottom {
+                position: fixed;
+                right: 0;
+                left: 0;
+                z-index: 1030;
+                background-color: aliceblue !important;
+                box-shadow: 0px 3px 20px 0px #00000059;
+        }
+        @media (max-width:584px) {
+            .navbar-brand{
+                margin:auto;
+            }
+            .nav{
+                margin: auto;
+            }
+            .container{
+                border-radius: 5px;
+            }
+          .firstB{
+            margin-top:80px;
+          }
+        }
+        @media (max-width:387px) {
+            ul > li:first-of-type{
+                display:none;
+            }
+        }
