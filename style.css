@@ -12,12 +12,37 @@
             border-radius:15px;
             padding:50px;
         }
+        .marks{
+            border-left: solid;
+            border-left: 1.5px solid;
+        }
+        .objective{
+                 font-style: italic;
+            color: #007bff;
+            font-size: 16px;
+            background: #ffffff4d;
+            padding-left: 10px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .contact-info{
+            margin-top:0px;
+            max-width: 80%;
+            padding:30px;
+            text-align: center;
+        }
         @media (max-width: 768px) {
         .container-fluid {
             max-width: 100%;
                 padding-right: 0px;
                 padding-left: 0px;
         }
+       .edu{
+            text-align: center;
+          }
+        .marks{
+            border:none;
+          }
         .container{
             padding-left:10px;
             padding-right:10px;
@@ -25,7 +50,15 @@
         hr{
             display:none;
         }
+        .eduentry{
+            border-bottom: solid;
+            border-bottom: 1px solid;
+            padding-bottom: 50px;
+            margin-top: 50px;
+            border-bottom-color: #979393;
         }
+}
+
         h1{
             font-weight:900;
         }
@@ -85,6 +118,8 @@
           .firstB{
             margin-top:80px;
           }
+
+
         }
         @media (max-width:387px) {
             ul > li:first-of-type{
