@@ -12,6 +12,12 @@
             border-radius:15px;
             padding:50px;
         }
+        .contact-info{
+            margin-top:0px;
+            max-width: 80%;
+            padding:30px;
+            text-align: center;
+        }
         @media (max-width: 768px) {
         .container-fluid {
             max-width: 100%;
