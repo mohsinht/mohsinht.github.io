@@ -56,6 +56,31 @@
             display: inline-block;
                 margin-left: 3;
         }
+                    .interests{
+                padding:8px;    font-size: 14px;
+            }
+
+           @media (max-width: 1100px){
+             .contact-info {
+    margin-top: 0px;
+    max-width: 100%;
+}
+           } 
+        @media (max-width: 1024px) {
+            .contact-info{
+                font-size: 9px;}
+            #circle,#circle-dim  {
+                height: 8px;
+                width: 8px;
+            }
+            .langs{
+                font-size:  15px;
+            }
+            .interests{
+                padding:8px;    font-size: 10px;
+            }
+        }
+
         @media (max-width: 768px) {
         .container-fluid {
             max-width: 100%;
@@ -83,7 +108,8 @@
             border-bottom-color: #979393;
         }
                 .contact-info{
-                font-size: 9px;}
+                font-size: 12px;
+                max-width: 80%;}
 }
 
         h1{
