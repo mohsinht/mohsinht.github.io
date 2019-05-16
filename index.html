@@ -4,7 +4,9 @@
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
    <link rel="stylesheet" type="text/css" href="style.css">
    <script src="https://use.fontawesome.com/d41a1a9d72.js"></script>
-   <!--- ----------------If someones mentions my link---------------- --->
+
+
+    <!--- ----------------If someones mentions my link---------------- --->
    <meta property="og:site_name" content="Mohsin's Resume"/>
    <meta property="og:title" content="About Mohsin Hayat"/>
    <meta property="og:description" content="This web page is a Resume and contains all the experiences, education and achievements of Mohsin Hayat."/>
@@ -26,7 +28,7 @@
     <nav id="navbar" class="navbar navbar-light bg-light navbar-fixed-top">
        <a class="navbar-brand" href="#"><b>About Mohsin</b></a>
        <ul class="nav nav-pills">
-           <li class="nav-item">
+           <li class="nav-item" id="intro">
                <a class="nav-link" href="#intro">Intro</a>
            </li>
            <li class="nav-item">
@@ -35,7 +37,7 @@
            <li class="nav-item">
                <a class="nav-link" href="#exp">Experience</a>
            </li>
-           <li class="nav-item">
+           <li class="nav-item" id="port">
                <a class="nav-link" href="#port">Portfolio</a>
            </li>
            <li class="nav-item">
@@ -82,7 +84,7 @@
    </div>
    <br>
 
-   <div class= "container contact-info">
+   <div class= "container">
        <div class="row">
            <div class="col-md-4">
             <span class="fa-stack fa-lg">
@@ -268,7 +270,7 @@
                     </h2>
 
                     <p>
-                        <ul>
+                        <ul class="text-left">
                             <li>Worked on Vue.JS and implemented centralized Vuex store in the web app (app.rocketbots.io)</li>
                             <li>Fixed daily bugs reported on Jira.</li>
                             <li>Implemented a web chat plugin for websites using PReact, Socket.io & Botman</li>
@@ -292,7 +294,7 @@
                 </h2>
 
                 <p>
-                    <ul>
+                    <ul  class="text-left">
                         <li>Worked on core Wordpress including theme/plugin customization & bug fixing</li>
                         <li>Remained <b>Top Rated</b> on Upwork in 2016, successfully completing 15+ jobs.</li>
                         <li>Gained Level 1 on Fiverr.com by completing 25+ jobs.</li>
@@ -349,7 +351,7 @@
 
          <p>
             Done some projects in different courses during my stay at the university.
-            <ul>
+            <ul  class="text-left">
                 <li>Coded complete Library Management System in JAVA. Including Multi-user Authentication, SWING-GUI, SQL Database and Multi-Threading.</li>
                 <li>A machine learning algorithm based on Convolutional Neural Networks to classify Cats and Dogs. Built using Tensorflow, Keras and Numpy. (<a href="https://github.com/mohsinht/cats-vs-dogs/blob/master/CV_CatsVsDogs_FINAL_EVL.ipynb">Notebook Link</a>)</li>
                 <li>Coded Robozzle Game using C++. Console based game but has puzzles and is fun for new users.</li>
@@ -372,7 +374,7 @@
          </h2>
 
          <p>
-            <ul>
+            <ul  class="text-left">
                 <li><b>Citizen Portal App</b> -  A web app to add/resolve complaints. Built using React, Redux, Firebase (Auth, Firestore, Cloud Functions) and Thunk. (<a href="https://github.com/mohsinht/citizen-portal-app">Github</a> | <a href="https://pm-citizen-portal.firebaseapp.com/">Website</a>)</li>
                 <li><b>Purzey Website</b> -  An ecommerce website to manage orders and provide a campus management system to students. Built using Wordpress and WooCommerce. (<a href="https://www.purzey.pk/">Website</a>)</li>
                 <li><b>Spamsort</b> -  A web app to add, manage and search spammers/fraudulent cases in realtime. Built using simple JS, Jquery, Firebase.  (<a href="https://github.com/mohsinht/spamsort.github.io">Github</a>)</li>
