@@ -159,11 +159,18 @@
                 box-shadow: 0px 3px 20px 0px #00000059;
         }
         @media (max-width:584px) {
+            #intro{
+                display: none;
+                }
+               #port{
+                display: none;
+               } 
             .navbar-brand{
                 margin:auto;
             }
             .nav{
                 margin: auto;
+                    flex-flow: unset;
             }
             .container{
                 border-radius: 5px;
