@@ -3,6 +3,19 @@
             background-color: #22313F;
             font-family: Montserrat;
         }
+        .download-button{
+            border-radius: 7%;
+            margin-left: 10px;
+        }
+        .download-button-text{
+            background: #22313f;
+            color: white
+        }
+        .download-button-text:hover{
+            background: #00000f;
+            color: white;
+            box-shadow: 0px 6px 17px 0px #00000054;
+        }
         .container-fluid{
             margin:auto;
         }
@@ -11,6 +24,14 @@
             background-color:aliceblue;
             border-radius:15px;
             padding:50px;
+        }
+        .container:hover{
+             box-shadow: 0px 0px 20px 20px #0000001f;
+        }
+        .container:active{
+            outline-width: 3px;
+            outline-style: solid;
+            outline-color: #007bff;
         }
         .marks{
             border-left: solid;
