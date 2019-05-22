@@ -1,47 +1,62 @@
         @import url('https://fonts.googleapis.com/css?family=Montserrat');
-        body{
+        body {
             background-color: #22313F;
             font-family: Montserrat;
         }
-        .download-phone{
+        
+        .download-phone {
             display: none;
         }
-        .download-button{
+        
+        .download-button {
             border-radius: 7%;
             margin-left: 10px;
         }
-        .download-button-text{
+        
+        .download-button-text {
             background: #22313f;
             color: white
         }
-        .download-button-text:hover{
+        
+        .download-button-text:hover {
             background: #00000f;
             color: white;
             box-shadow: 0px 6px 17px 0px #00000054;
         }
-        .container-fluid{
-            margin:auto;
+        
+        .container-fluid {
+            margin: auto;
         }
-        .container{
-            margin-top:50px;
-            background-color:aliceblue;
-            border-radius:15px;
-            padding:50px;
+        
+        .container {
+            margin-top: 50px;
+            background-color: aliceblue;
+            border-radius: 15px;
+            padding: 50px;
+            -webkit-transition: border-radius ease 0.5s;
+            /* Safari */
+            transition: border-radius ease 0.5s;
         }
-        .container:hover{
-             box-shadow: 0px 0px 20px 20px #0000001f;
+        
+        .container:hover {
+            box-shadow: 0px 0px 20px 20px #0000001f;
+            border-radius: 20px;
         }
-        .container:active{
+        
+        .container:active {
             outline-width: 3px;
             outline-style: solid;
             outline-color: #007bff;
+            border-radius: 0px;
         }
-        .marks{
+        
+        .marks {
             border-left: solid;
             border-left: 1.5px solid;
         }
-        .objective{
-                 font-style: italic;
+        
+        .objective {
+            font-style: italic;
             color: #007bff;
             font-size: 16px;
             background: #ffffff4d;
@@ -49,105 +64,119 @@
             border-radius: 8px;
             margin-top: 20px;
         }
-        .contact-info{
-            margin-top:0px;
+        
+        .contact-info {
+            margin-top: 0px;
             max-width: 80%;
-            padding:30px;
+            padding: 30px;
             text-align: center;
         }
-
+        
         #circle {
-          width: 13px;
-          height: 13px;
-          -webkit-border-radius: 25px;
-          -moz-border-radius: 25px;
-          border-radius: 25px;
-          background: #007bff;
+            width: 13px;
+            height: 13px;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            border-radius: 25px;
+            background: #007bff;
             display: inline-block;
-                margin-left: 3;
+            margin-left: 3;
         }
-        .rborder{
+        
+        .rborder {
             border-right: solid 1px rgba(163, 163, 163, 0.24);
         }
+        
         #circle-dim {
-          width: 13px;
-          height: 13px;
-          -webkit-border-radius: 25px;
-          -moz-border-radius: 25px;
-          border-radius: 25px;
-          background: grey;
-          margin-top:1px;
+            width: 13px;
+            height: 13px;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            border-radius: 25px;
+            background: grey;
+            margin-top: 1px;
             display: inline-block;
-                margin-left: 3;
+            margin-left: 3;
         }
-                    .interests{
-                padding:8px;    font-size: 14px;
+        
+        .interests {
+            padding: 8px;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 1100px) {
+            .contact-info {
+                margin-top: 0px;
+                max-width: 100%;
             }
-
-           @media (max-width: 1100px){
-             .contact-info {
-    margin-top: 0px;
-    max-width: 100%;
-}
-           } 
+        }
+        
         @media (max-width: 1024px) {
-            .contact-info{
-                font-size: 9px;}
-            #circle,#circle-dim  {
+            .contact-info {
+                font-size: 14px;
+            }
+            #circle,
+            #circle-dim {
                 height: 8px;
                 width: 8px;
             }
-            .langs{
-                font-size:  15px;
+            .langs {
+                font-size: 15px;
             }
-            .interests{
-                padding:8px;    font-size: 10px;
+            .interests {
+                padding: 8px;
+                font-size: 10px;
             }
         }
-
+        
         @media (max-width: 768px) {
-        .container-fluid {
-            max-width: 100%;
+            .container-fluid {
+                max-width: 100%;
                 padding-right: 0px;
                 padding-left: 0px;
-        }
-       .edu{
-            text-align: center;
-          }
-        .marks{
-            border:none;
-          }
-        .container{
-            padding-left:10px;
-            padding-right:10px;
-        }
-        hr{
-            display:none;
-        }
-        .eduentry{
-            border-bottom: solid;
-            border-bottom: 1px solid;
-            padding-bottom: 50px;
-            margin-top: 50px;
-            border-bottom-color: #979393;
-        }
-                .contact-info{
+            }
+            .edu {
+                text-align: center;
+            }
+            .marks {
+                border: none;
+            }
+            .container {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            hr {
+                display: none;
+            }
+            .eduentry {
+                border-bottom: solid;
+                border-bottom: 1px solid;
+                padding-bottom: 50px;
+                margin-top: 50px;
+                border-bottom-color: #979393;
+            }
+            .contact-info {
                 font-size: 12px;
-                max-width: 80%;}
-}
-
-        h1{
-            font-weight:900;
+                max-width: 80%;
+            }
         }
-        .mydp{
-            width:250px;
+        
+        h1 {
+            font-weight: 900;
         }
-        a{
-            color:#22313f;
+        
+        .mydp {
+            width: 250px;
         }
-        hr{
-            border-top:1px solid rgba(255, 255, 255, 0.24);
+        
+        a {
+            color: #22313f;
         }
+        
+        hr {
+            border-top: 1px solid rgba(255, 255, 255, 0.24);
+        }
+        
         .overlay {
             position: absolute;
             top: 0;
@@ -160,6 +189,7 @@
             transition: .5s ease;
             background-color: #008CBA;
         }
+        
         .ovtext {
             color: white;
             font-size: 20px;
@@ -170,56 +200,77 @@
             -ms-transform: translate(-50%, -50%);
             text-align: center;
         }
+        
         .portfBox:hover .overlay {
             opacity: 1;
         }
+        
         .navbar-fixed-top,
         .navbar-fixed-bottom {
-                position: fixed;
-                right: 0;
-                left: 0;
-                z-index: 1030;
-                background-color: aliceblue !important;
-                box-shadow: 0px 3px 20px 0px #00000059;
+            position: fixed;
+            right: 0;
+            left: 0;
+            z-index: 1030;
+            background-color: aliceblue !important;
+            box-shadow: 0px 3px 20px 0px #00000059;
         }
+        
         @media (max-width:584px) {
-            .download-button{
+            .download-button {
                 display: none;
             }
-            #introm{
+            #introm {
                 display: none;
-                }
-               #port{
-                display: none;
-               } 
-            .navbar-brand{
-                margin:auto;
             }
-            .nav{
+            #port {
+                display: none;
+            }
+            .navbar-brand {
                 margin: auto;
-                    flex-flow: unset;
             }
-            .container{
+            .nav {
+                margin: auto;
+                flex-flow: unset;
+            }
+            .container {
                 border-radius: 5px;
             }
-          .firstB{
-            margin-top:80px;
-          }
-          .download-phone{
-            display: inline;
-            text-align: center;
-            flex: auto;
-            background: #22313f;
-            color: white !important;
-            padding-top: 6px;
-            padding-bottom: 6px;
-            border-radius: 5px;
+            .firstB {
+                margin-top: 80px;
+            }
+            .download-phone {
+                display: inline;
+                text-align: center;
+                flex: auto;
+                background: #22313f;
+                color: white !important;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                border-radius: 5px;
                 width: 100%;
-          }
-
+            }
         }
+        
         @media (max-width:387px) {
-            ul > li:first-of-type{
-                display:none;
+            ul > li:first-of-type {
+                display: none;
+            }
+        }
+        
+        @-webkit-keyframes highlight {
+            from {
+                border-radius: 15px;
+            }
+            to {
+                border-radius: 0px;
+            }
+        }
+        
+        @keyframes highlight {
+            from {
+                border-radius: 15px;
+            }
+            to {
+                border-radius: 0px;
             }
         }
