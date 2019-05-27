@@ -8,6 +8,10 @@
             display: none;
         }
         
+        .contact-links:hover {
+            text-decoration: none;
+        }
+        
         .download-button {
             border-radius: 7%;
             margin-left: 10px;
