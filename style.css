@@ -171,6 +171,12 @@
         
         .mydp {
             width: 250px;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+        }
+
+        .mydp:hover{
+            box-shadow: 0 0 17px 0px #00000087;
         }
         
         a {
