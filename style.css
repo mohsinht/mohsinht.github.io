@@ -288,3 +288,13 @@
                 border-radius: 0px;
             }
         }
+
+        .facebook-link:hover{
+                color: #3b5998;
+        }
+        .github-link:hover{
+                color: #000333
+        }
+        .linkedin-link:hover{
+                color: #0077B5
+        }
