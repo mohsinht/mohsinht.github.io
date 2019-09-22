@@ -316,3 +316,9 @@ hr {
   background-position-y: 2px;
   background-size: 300px;
 }
+
+.company-btn-download {
+  padding: 8px;
+  border-radius: 6px;
+  text-decoration: none;
+}
