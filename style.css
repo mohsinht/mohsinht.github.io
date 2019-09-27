@@ -108,8 +108,12 @@ body {
   padding: 8px;
   font-size: 14px;
 }
-
-media (min-width: 992px){
+@media (min-width: 1200px){
+  .contact-info {
+    max-width: 1050px;
+  }
+}
+@media (min-width: 992px){
   .contact-info {
     max-width: 875px;
   }
