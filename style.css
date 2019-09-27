@@ -70,11 +70,11 @@ body {
 }
 
 .contact-info {
-  margin-top: 0px;
-  max-width: 83%;
-  padding: 30px;
-  text-align: center;
-  font-size: 87%;
+    margin-top: 0px;
+    padding: 30px;
+    text-align: center;
+    font-size: 87%;
+    max-width: 1050px;
 }
 
 #circle {
@@ -109,17 +109,19 @@ body {
   font-size: 14px;
 }
 
-@media (max-width: 1100px) {
+media (min-width: 992px){
   .contact-info {
-    margin-top: 0px;
-    max-width: 86%;
+    max-width: 875px;
+  }
+}
+@media (min-width: 768px){
+  .contact-info {
+    max-width: 720px;
+    font-size: 11px;
   }
 }
 
 @media (max-width: 1024px) {
-  .contact-info {
-    font-size: 12px;
-  }
   #circle,
   #circle-dim {
     height: 8px;
@@ -159,10 +161,6 @@ body {
     padding-bottom: 50px;
     margin-top: 50px;
     border-bottom-color: #979393;
-  }
-  .contact-info {
-    font-size: 12px;
-    max-width: 80%;
   }
 }
 
