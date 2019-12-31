@@ -70,11 +70,11 @@ body {
 }
 
 .contact-info {
-    margin-top: 0px;
-    padding: 30px;
-    text-align: center;
-    font-size: 87%;
-    max-width: 1050px;
+  margin-top: 0px;
+  padding: 30px;
+  text-align: center;
+  font-size: 87%;
+  max-width: 1050px;
 }
 
 #circle {
@@ -108,19 +108,19 @@ body {
   padding: 8px;
   font-size: 14px;
 }
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
   .contact-info {
     max-width: 875px;
   }
 }
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
   .contact-info {
     max-width: 720px;
     font-size: 11px;
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .contact-info {
     max-width: 390px;
     font-size: 16px;
@@ -327,4 +327,25 @@ hr {
   padding: 8px;
   border-radius: 6px;
   text-decoration: none;
+}
+
+.badge-primary:hover {
+  background-color: #0060c8;
+}
+.badge-primary {
+  cursor: pointer;
+}
+.lang-stars {
+  display: list-item;
+  list-style: none;
+}
+
+.site-credits {
+  color: aliceblue;
+  opacity: 0.1;
+  -webkit-transition: opacity ease 0.5s;
+  transition: opacity ease 0.5s;
+}
+.site-credits:hover {
+  opacity: 1;
 }
