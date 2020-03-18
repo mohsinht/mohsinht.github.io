@@ -56,8 +56,7 @@ body {
 }
 
 .marks {
-  border-left: solid;
-  border-left: 1.5px solid;
+    border-left: 1.5px solid #22313f;
 }
 
 .objective {
