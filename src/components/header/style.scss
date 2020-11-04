@@ -1,0 +1,64 @@
+@import "../../settings/media-widths.scss";
+
+.mh-nav {
+  .download-button {
+    border-radius: 7%;
+    margin-left: 10px;
+  }
+  .download-button-text {
+    background: #22313f;
+    color: white;
+  }
+  .download-button-text:hover {
+    background: #00000f;
+    color: white;
+    box-shadow: 0px 6px 17px 0px #00000054;
+  }
+  .download-phone {
+    display: none;
+  }
+
+  &.navbar-fixed-top,
+  &.navbar-fixed-bottom {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: aliceblue !important;
+    box-shadow: 0px 3px 20px 0px #00000059;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    margin: auto;
+    .navbar-brand {
+      margin: auto;
+    }
+    .download-phone {
+      display: inline;
+      text-align: center;
+      flex: auto;
+      background: #22313f;
+      color: white !important;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      border-radius: 5px;
+      width: 100%;
+    }
+    #intro-link, #exp, .download-button {
+      display: none;
+    }
+    #exp {
+      display: none;
+    }
+    .nav-pills {
+      margin: auto;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .nav-link {
+      display: block;
+      padding: 0;
+      padding-top: 0.5rem;
+    }
+  }
+}
