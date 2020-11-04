@@ -1,16 +1,29 @@
 import React from "react"
-import "./style.scss";
+import "./style.scss"
 
-const Header = (props: any) => {
+interface HeaderContent {
+    text: {
+        title: string
+    }
+}
+
+interface ResumeFile {
+    resume: {
+        url: string,
+        title: string
+    }
+}
+
+const Header = (props: HeaderContent & ResumeFile) => {
     return (
         <>
             <nav id="navbar" className="navbar navbar-light bg-light navbar-fixed-top mh-nav">
-                <a className="navbar-brand" href="#"><b>Mohsin's Resumé</b></a>
+                <a className="navbar-brand" href="#"><b>{props.text.title}</b></a>
                 <a
                     className="download-phone"
-                    href="/downloads/MohsinHayatResume.pdf"
+                    href={props.resume.url}
                     data-toggle="tooltip"
-                    title="Download resume file in PDF"
+                    title={props.resume.title}
                     download
                 >Download PDF version</a
                 >
@@ -30,9 +43,9 @@ const Header = (props: any) => {
                     <li className="nav-item download-button">
                         <a
                             className="nav-link download-button-text"
-                            href="/downloads/MohsinHayatResume.pdf"
+                            href={props.resume.url}
                             data-toggle="tooltip"
-                            title="Download resume file in PDF"
+                            title={props.resume.title}
                             download
                         >Download</a
                         >
