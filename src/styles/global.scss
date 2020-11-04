@@ -15,3 +15,26 @@ a {
 hr {
   border-top: 1px solid rgba(255, 255, 255, 0.24);
 }
+
+.container-fluid {
+  margin: auto;
+}
+
+.container {
+  -webkit-transition: border-radius ease 0.5s;
+  /* Safari */
+  transition: border-radius ease 0.5s;
+}
+
+.container:hover {
+  box-shadow: 0px 0px 20px 20px #0000001f;
+  border-radius: 20px;
+  background-color: #e6f2fc;
+}
+
+.container:active {
+  outline-width: 3px;
+  outline-style: solid;
+  outline-color: #007bff;
+  border-radius: 0px;
+}
