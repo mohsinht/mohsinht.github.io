@@ -3,7 +3,14 @@ import "./style.scss"
 
 interface IntroContent {
     text: {
-        title: string
+        firstName: string,
+        lastName: string,
+        tagline: string,
+        social: {
+            facebook: string,
+            linkedin: string,
+            github: string
+        }
     }
 }
 
@@ -20,8 +27,8 @@ const Intro = (props: IntroContent & DisplayPicture) => {
                 <div className="row">
                     <div className="col-md-7">
                         <br />
-                        <h1 className="text-center">MOHSIN HAYAT</h1>
-                        <h2 className="text-center">Full Stack Web Developer & Designer</h2>
+                        <h1 className="text-center name">{`${props.text.firstName} ${props.text.lastName}`}</h1>
+                        <h2 className="text-center">{props.text.tagline}</h2>
 
                         <br />
                         <div className="text-center">
@@ -29,7 +36,7 @@ const Intro = (props: IntroContent & DisplayPicture) => {
                                 className="facebook-link"
                                 data-toggle="tooltip"
                                 title="Facebook Profile"
-                                href="https://www.facebook.com/mohsinhayatt"
+                                href={props.text.social.facebook}
                                 target="_blank"
                             ><span className="fa-stack fa-lg">
                                     <i className="fa fa-square-o fa-stack-2x"></i>
@@ -39,7 +46,7 @@ const Intro = (props: IntroContent & DisplayPicture) => {
                                 className="github-link"
                                 data-toggle="tooltip"
                                 title="Github Profile"
-                                href="https://github.com/mohsinht"
+                                href={props.text.social.github}
                                 target="_blank"
                             ><span className="fa-stack fa-lg">
                                     <i className="fa fa-square-o fa-stack-2x"></i>
@@ -49,7 +56,7 @@ const Intro = (props: IntroContent & DisplayPicture) => {
                                 className="linkedin-link"
                                 data-toggle="tooltip"
                                 title="LinkedIn Profile"
-                                href="https://www.linkedin.com/in/mohsinhayatt/"
+                                href={props.text.social.linkedin}
                                 target="_blank"
                             ><span className="fa-stack fa-lg">
                                     <i className="fa fa-square-o fa-stack-2x"></i>

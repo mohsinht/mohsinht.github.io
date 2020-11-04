@@ -8,6 +8,7 @@ import Intro from "../components/intro";
 
 // Content: 
 import HeaderContent from '../../content/header';
+import IntroContent from '../../content/intro';
 
 // Assets:
 import downloads from '../../content/downloads';
@@ -18,7 +19,7 @@ export default function IndexRoute(props: PageProps) {
     <>
       <Header text={HeaderContent} resume={downloads.resume} />
       <div className="container-fluid">
-        <Intro text={HeaderContent} dp={assets.displayPicture} />
+        <Intro text={IntroContent} dp={assets.displayPicture} />
       </div>
     </>
   )

@@ -6,6 +6,8 @@ $primary-color: #22313f;
 body {
   background-color: $primary-color;
   font-family: $font-stack;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
 
 a {
