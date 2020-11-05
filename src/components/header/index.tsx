@@ -1,5 +1,6 @@
-import React from "react"
+import React, { useState } from "react"
 import "./style.scss"
+import { Popover, PopoverHeader, PopoverBody } from "reactstrap";
 
 interface HeaderContent {
     text: {
@@ -15,6 +16,11 @@ interface ResumeFile {
 }
 
 const Header = (props: HeaderContent & ResumeFile) => {
+    const [popoverOpen, setPopoverOpen] = useState(false);
+
+    const onHover = () => setPopoverOpen(true);
+    const onHoverLeave = () => setPopoverOpen(false);
+
     return (
         <>
             <nav id="navbar" className="navbar navbar-light bg-light navbar-fixed-top mh-nav">
@@ -44,11 +50,19 @@ const Header = (props: HeaderContent & ResumeFile) => {
                         <a
                             className="nav-link download-button-text"
                             href={props.resume.url}
-                            data-toggle="tooltip"
-                            title={props.resume.title}
                             download
+                            id="resume_tooltip"
+                            onMouseEnter={onHover}
+                            onMouseLeave={onHoverLeave}
                         >Download</a
                         >
+                        <Popover
+                            placement="bottom"
+                            isOpen={popoverOpen}
+                            target="resume_tooltip"
+                        >
+                            <PopoverBody>{props.resume.title}</PopoverBody>
+                        </Popover>
                     </li>
                 </ul>
             </nav>

@@ -1,3 +1,11 @@
 module.exports = {
-  plugins: [`gatsby-plugin-sass`],
-}
+  plugins: [
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        includePaths: [require('path').resolve(__dirname, 'node_modules')],
+      },
+    },
+    `gatsby-plugin-react-helmet`,
+  ],
+};

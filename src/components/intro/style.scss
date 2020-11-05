@@ -1,4 +1,4 @@
-@import "../../settings/media-widths.scss";
+@import '../../settings/media-widths.scss';
 
 .intro-block {
   margin-top: 6rem;
@@ -19,13 +19,16 @@
   .mydp:hover {
     box-shadow: 0 0 17px 0px #00000087;
   }
+  .popover {
+    line-height: 1;
+  }
   @media (max-width: $breakpoint-tablet) {
     margin-top: 7rem;
     .mydp {
-        width: 12rem;
+      width: 12rem;
     }
   }
-  @media (max-width: $breakpoint-mobile) { 
+  @media (max-width: $breakpoint-mobile) {
     margin-top: 10rem;
   }
 }
