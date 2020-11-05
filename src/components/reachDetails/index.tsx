@@ -1,5 +1,6 @@
-import React from "react"
+import React, { useState } from "react"
 import "./style.scss"
+import { Popover, PopoverBody } from "reactstrap";
 
 interface ReachContent {
     text: {
@@ -22,52 +23,100 @@ interface ReachContent {
 }
 
 const ReachDetails = (props: ReachContent) => {
+
+    const [popoverOpen, setPopoverOpen] = useState([false, false, false]);
+
+    const onHover = (id) => {
+        let arr = [...popoverOpen];
+        arr = [false, false, false];
+        arr[id] = true;
+        setPopoverOpen(arr)
+    };
+    const onHoverLeave = (id) => {
+        let arr = [...popoverOpen];
+        arr[id] = false;
+        setPopoverOpen(arr)
+    };
     return (
         <>
-            <div className="container contact-info">
+            <div className="container reach-block">
                 <div className="row">
-                    <div className="col-md-4">
+                    <div className="col-lg-4">
                         <a
-                            data-toggle="tooltip"
-                            title="Click to email me"
-                            href="mailto:mohsinhayat104@gmail.com"
+                            onMouseEnter={() => onHover(0)}
+                            onMouseLeave={() => onHoverLeave(0)}
+                            id="user-email"
+                            href={props.text.email.url}
                             className="contact-links row"
                         >
-                            <div className="col-4">
+                            <div className="col-3 pl-0 pr-1">
                                 <span className="fa-stack fa-lg">
                                     <i className="fa fa-envelope-square fa-stack-2x"></i
                                     ></span>
                             </div>
-                            <div className="col-8">mohsinhayat104@gmail.com</div>
+                            <div className="col-9 pl-0 reach-text">{props.text.email.text}</div>
                         </a>
+                        <Popover
+                            placement="top"
+                            isOpen={popoverOpen[0]}
+                            target="user-email"
+                            className="icon-popover"
+                        >
+                            <PopoverBody>{props.text.email.cta}</PopoverBody>
+                        </Popover>
+
                     </div>
 
-                    <div className="col-md-4">
+                    <div className="col-lg-4 pl-lg-5">
                         <a
-                            data-toggle="tooltip"
-                            title="Click to call me"
-                            href="tel:+923364526811"
-                            className="contact-links"
+                            onMouseEnter={() => onHover(1)}
+                            onMouseLeave={() => onHoverLeave(1)}
+                            id="user-phone"
+                            href={props.text.phone.url}
+                            className="contact-links row"
                         >
-                            <span className="fa-stack fa-lg">
-                                <i className="fa fa-phone-square fa-stack-2x"></i
-                                ></span>
-              &nbsp; (+92)-336-4256811
-            </a>
+                            <div className="col-3 pl-0 pr-1">
+                                <span className="fa-stack fa-lg">
+                                    <i className="fa fa-phone-square fa-stack-2x"></i
+                                    ></span>
+                            </div>
+                            <div className="col-9 pl-0 reach-text">{props.text.phone.text}</div>
+                        </a>
+                        <Popover
+                            placement="top"
+                            isOpen={popoverOpen[1]}
+                            target="user-phone"
+                            className="icon-popover"
+                        >
+                            <PopoverBody>{props.text.phone.cta}</PopoverBody>
+                        </Popover>
+
                     </div>
 
-                    <div className="col-md-4">
+                    <div className="col-lg-4 pl-2">
                         <a
-                            data-toggle="tooltip"
-                            title="View on Map"
-                            href="https://goo.gl/maps/cTv2fUYvSSkDxjSh7"
-                            className="contact-links"
+                            onMouseEnter={() => onHover(2)}
+                            onMouseLeave={() => onHoverLeave(2)}
+                            id="user-location"
+                            href={props.text.location.url}
+                            className="contact-links row"
                         >
-                            <span className="fa-stack fa-lg">
-                                <i className="fa fa-map-marker fa-stack-2x"></i
-                                ></span>
-              &nbsp; Lahore, Punjab, Pakistan
-            </a>
+                            <div className="col-3 pr-0 pl-1">
+                                <span className="fa-stack fa-lg">
+                                    <i className="fa fa-map-marker fa-stack-2x"></i
+                                    ></span>
+                            </div>
+                            <div className="col-9 pl-0 reach-text">{props.text.location.text}</div>
+                        </a>
+                        <Popover
+                            placement="top"
+                            isOpen={popoverOpen[2]}
+                            target="user-location"
+                            className="icon-popover"
+                        >
+                            <PopoverBody>{props.text.location.cta}</PopoverBody>
+                        </Popover>
+
                     </div>
                 </div>
             </div>
