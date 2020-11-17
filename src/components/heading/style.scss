@@ -1,0 +1,20 @@
+@import '../../settings/media-widths.scss';
+.heading {
+  margin: 3rem 0rem 1.8rem 0rem;
+  hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.24);
+  }
+  h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: aliceblue;
+  }
+  @media (max-width: $breakpoint-mobile) {
+    h2 {
+      font-size: 1.5rem;
+    }
+    hr {
+      display: none;
+    }
+  }
+}

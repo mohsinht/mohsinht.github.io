@@ -11,11 +11,13 @@ import Header from "../components/header";
 import Intro from "../components/intro";
 import ReachDetails from "../components/reachDetails";
 import HtmlHead from "../components/htmlHead"
+import PersonalStatement from "../components/personalStatement";
 
 // Content: 
 import HeaderContent from '../../content/header';
 import IntroContent from '../../content/intro';
 import ReachContent from '../../content/reach';
+import PersonalStatementContent from '../../content/personalStatement';
 
 // Assets:
 import downloads from '../../content/downloads';
@@ -29,6 +31,7 @@ export default function IndexRoute(props: PageProps) {
       <div className="container-fluid">
         <Intro text={IntroContent} dp={assets.displayPicture} />
         <ReachDetails text={ReachContent} />
+        <PersonalStatement text={PersonalStatementContent}  />
       </div>
     </>
   )
