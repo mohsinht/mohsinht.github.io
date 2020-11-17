@@ -22,6 +22,14 @@ import PersonalStatementContent from '../../content/personalStatement';
 // Assets:
 import downloads from '../../content/downloads';
 import assets from '../../content/assets';
+import Education from "../components/education";
+import Experience from "../components/experience";
+import Projects from "../components/projects";
+import MostProudOf from "../components/mostProudOf";
+import MoreInfo from "../components/moreInfo";
+import Recommendations from "../components/recommendations";
+import Testimonials from "../components/testimonials";
+import Contact from "../components/contact";
 
 export default function IndexRoute(props: PageProps) {
   return (
@@ -32,6 +40,14 @@ export default function IndexRoute(props: PageProps) {
         <Intro text={IntroContent} dp={assets.displayPicture} />
         <ReachDetails text={ReachContent} />
         <PersonalStatement text={PersonalStatementContent}  />
+        <Education />
+        <Experience />
+        <Projects />
+        <MostProudOf />
+        <MoreInfo />
+        <Recommendations />
+        <Testimonials />
+        <Contact />
       </div>
     </>
   )

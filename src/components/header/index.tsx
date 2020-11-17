@@ -2,20 +2,20 @@ import React, { useState } from "react"
 import "./style.scss"
 import { Popover, PopoverHeader, PopoverBody } from "reactstrap";
 
-interface HeaderContent {
+interface IHeaderContent {
     text: {
         title: string
     }
 }
 
-interface ResumeFile {
+interface IResumeFile {
     resume: {
         url: string,
         title: string
     }
 }
 
-const Header = (props: HeaderContent & ResumeFile) => {
+const Header = (props: IHeaderContent & IResumeFile) => {
     const [popoverOpen, setPopoverOpen] = useState(false);
 
     const onHover = () => setPopoverOpen(true);
