@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import "./style.scss"
 import { Popover, PopoverHeader, PopoverBody } from "reactstrap";
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 interface IHeaderContent {
     text: {
@@ -23,8 +24,9 @@ const Header = (props: IHeaderContent & IResumeFile) => {
 
     return (
         <>
-            <nav id="navbar" className="navbar navbar-light bg-light navbar-fixed-top mh-nav">
-                <a className="navbar-brand" href="#">{props.text.title}</a>
+            <nav id="navbar" className="navbar navbar-light bg-light navbar-fixed-top mh-nav" >
+                <a className="navbar-brand" href="#" data-sal="slide-right"
+                    data-sal-easing="ease">{props.text.title}</a>
                 <a
                     className="download-phone"
                     href={props.resume.url}
@@ -33,20 +35,22 @@ const Header = (props: IHeaderContent & IResumeFile) => {
                     download
                 >Download PDF version</a
                 >
-                <ul className="nav nav-pills">
+                <ul className="nav nav-pills" data-sal="slide-left"
+                    data-sal-easing="ease">
                     <li className="nav-item" id="intro-link">
-                        <a className="nav-link" href="#intro">Intro</a>
+                        <a className="nav-link" onClick={() => scrollTo('#intro')} >Intro</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#education">Education</a>
+                        <a className="nav-link" onClick={() => scrollTo('#education')}>Education</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#exp">Experience</a>
+                        <a className="nav-link" onClick={() => scrollTo('#experience')}>Experience</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#contact">Contact</a>
+                        <a className="nav-link" onClick={() => scrollTo('#contact')}>Contact</a>
                     </li>
-                    <li className="nav-item download-button">
+                    <li className="nav-item download-button" data-sal="slide-left"
+                    data-sal-easing="ease">
                         <a
                             className="nav-link download-button-text"
                             href={props.resume.url}

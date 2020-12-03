@@ -14,6 +14,7 @@ module.exports = {
         threshold: 1,
         once: true, // Defines if animation needs to be launched once
       }
-    }
+    },
+    `gatsby-plugin-smoothscroll`
   ],
 };

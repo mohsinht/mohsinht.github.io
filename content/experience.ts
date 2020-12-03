@@ -8,7 +8,7 @@ export default [
         to: 'Current',
         bullets: [
           '[Jul-Aug] Got training sessions on Python (Django), Clean-Code and Git.',
-          '[Aug-Sep] Worked on a game called "Unlocked: Rogue Scientist 1990" by The Escape Game. I developed the dashboard using React/Redux and the backend in NodeJs with Sequelize.',
+          '[Aug-Sep] Worked on a web-based game called "Unlocked: Rogue Scientist 1990" by The Escape Game. I developed the dashboard using React/Redux and the backend in NodeJs with Sequelize.',
           '[Sep-Dec] Developed complete backend of a web based multiplayer game using NodeJS.',
         ],
       },

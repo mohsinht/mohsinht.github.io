@@ -38,7 +38,7 @@ const Intro = (props: IntroContent & DisplayPicture) => {
 
     return (
 
-        <div className="container intro-block" data-sal="slide-up"
+        <div id="intro" className="container intro-block" data-sal="slide-up"
             data-sal-delay="300"
             data-sal-easing="ease">
             <div className="row">
