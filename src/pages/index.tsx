@@ -21,6 +21,7 @@ import ReachContent from '../../content/reach';
 import PersonalStatementContent from '../../content/personalStatement';
 import EducationContent from '../../content/education';
 import ExperienceContent from '../../content/experience';
+import ProjectsContent from '../../content/projects';
 
 // Assets:
 import downloads from '../../content/downloads';
@@ -45,7 +46,7 @@ export default function IndexRoute(props: PageProps) {
         <PersonalStatement text={PersonalStatementContent}  />
         <Education text={EducationContent} />
         <Experience text={ExperienceContent} />
-        <Projects />
+        <Projects text={ProjectsContent} />
         <MostProudOf />
         <MoreInfo />
         <Recommendations />

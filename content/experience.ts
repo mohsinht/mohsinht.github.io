@@ -1,17 +1,17 @@
 export default [
-    {
-        title: 'Full Stack Developer',
-        company: 'Tintash',
-        url: 'https://www.tintash.com',
-        location: 'Lahore, Pakistan',
-        from: 'July 2020',
-        to: 'Current',
-        bullets: [
-          '[Jul-Aug] Got training sessions on Python (Django), Clean-Code and Git.',
-          '[Aug-Sep] Worked on a web-based game called "Unlocked: Rogue Scientist 1990" by The Escape Game. I developed the dashboard using React/Redux and the backend in NodeJs with Sequelize.',
-          '[Sep-Dec] Developed complete backend of a web based multiplayer game using NodeJS.',
-        ],
-      },
+  {
+    title: 'Full Stack Developer',
+    company: 'Tintash',
+    url: 'https://www.tintash.com',
+    location: 'Lahore, Pakistan',
+    from: 'July 2020',
+    to: 'Current',
+    bullets: [
+      '[Jul-Aug] Got training sessions on Python (Django), Clean-Code and Git.',
+      '[Aug-Sep] Worked on a web-based game called "Unlocked: Rogue Scientist 1990" by The Escape Game. I developed the dashboard using React/Redux and the backend in NodeJs with Sequelize.',
+      '[Sep-Dec] Developed complete backend of a web based multiplayer game using NodeJS.',
+    ],
+  },
   {
     title: 'Web Developer Intern',
     company: 'SolutionInn',
@@ -53,7 +53,7 @@ export default [
       'Remained Top Rated on Upwork in 2016, completing 15+ jobs.',
       'Gained Level 1 on Fiverr.com by completing 25+ jobs.',
       'Worked on UI/UX Design & Site Optimization Tools.',
-      'Also worked on graphic design (branding) projects'
+      'Also worked on graphic design (branding) projects',
     ],
   },
 ];
