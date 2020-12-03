@@ -24,7 +24,7 @@ const Header = (props: IHeaderContent & IResumeFile) => {
     return (
         <>
             <nav id="navbar" className="navbar navbar-light bg-light navbar-fixed-top mh-nav">
-                <a className="navbar-brand" href="#"><b>{props.text.title}</b></a>
+                <a className="navbar-brand" href="#">{props.text.title}</a>
                 <a
                     className="download-phone"
                     href={props.resume.url}

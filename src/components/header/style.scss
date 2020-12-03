@@ -18,6 +18,10 @@
     display: none;
   }
 
+  .navbar-brand {
+    font-weight: 500;
+  }
+
   &.navbar-fixed-top,
   &.navbar-fixed-bottom {
     top: 0;
@@ -39,6 +43,7 @@
     margin: auto;
     .navbar-brand {
       margin: auto;
+
     }
     .download-phone {
       display: inline;

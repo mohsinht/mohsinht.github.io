@@ -1,1 +1,67 @@
-@import "../../settings/media-widths.scss";
+@import '../../settings/media-widths.scss';
+
+.experience-block {
+  background-color: aliceblue;
+  border-radius: 0.5rem;
+  padding: 1.5rem 2rem;
+ p{
+     margin-bottom: 0;
+ }
+  h2.job-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0rem;
+  }
+
+  a.company-name,
+  span.company-name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #007bff;
+    margin-bottom: 0.4rem;
+    span {
+      color: initial;
+    }
+  }
+
+  span.job-location {
+    color: initial;
+    border-left: 1.5px solid #0000002e;
+    margin-left: 0.4rem;
+    padding-left: 0.4rem;
+    .fa-stack {
+        line-height: 1.9em;
+    }
+  }
+
+  p.job-duration {
+    font-size: 0.7rem;
+    margin-bottom: 0rem;
+    font-weight: 500;
+    margin-top:0.3rem;
+  }
+
+  p.job-duration .fa-stack {
+    width: 1em;
+    height: 2em;
+    line-height: 1.9em;
+    margin-right: 0.3rem;
+  }
+
+  .experience-row {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #0000000a;
+  }
+
+  .experience-row:hover {
+    background-color: #22313f0d;
+    border-radius: 0.5rem;
+  }
+
+  .job-description {
+      margin-top: 0.5rem;
+      li {
+          font-size: 0.9rem;
+      }
+  }
+}

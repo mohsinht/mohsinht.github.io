@@ -4,6 +4,7 @@ import "../styles/global.scss";
 
 // Scripts
 import 'popper.js/dist/popper.js';
+import 'sal.js/dist/sal.css';
 // import 'bootstrap/dist/js/bootstrap.js';
 
 // Components:
@@ -18,6 +19,8 @@ import HeaderContent from '../../content/header';
 import IntroContent from '../../content/intro';
 import ReachContent from '../../content/reach';
 import PersonalStatementContent from '../../content/personalStatement';
+import EducationContent from '../../content/education';
+import ExperienceContent from '../../content/experience';
 
 // Assets:
 import downloads from '../../content/downloads';
@@ -40,8 +43,8 @@ export default function IndexRoute(props: PageProps) {
         <Intro text={IntroContent} dp={assets.displayPicture} />
         <ReachDetails text={ReachContent} />
         <PersonalStatement text={PersonalStatementContent}  />
-        <Education />
-        <Experience />
+        <Education text={EducationContent} />
+        <Experience text={ExperienceContent} />
         <Projects />
         <MostProudOf />
         <MoreInfo />

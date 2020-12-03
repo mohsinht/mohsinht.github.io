@@ -20,6 +20,7 @@
     "gatsby": "^2.25.1",
     "gatsby-plugin-react-helmet": "^3.3.14",
     "gatsby-plugin-sass": "^2.4.2",
+    "gatsby-plugin-scroll-reveal": "0.0.7",
     "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
     "popper.js": "^1.16.1",
@@ -27,7 +28,8 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
     "react-popper": "^2.2.3",
-    "reactstrap": "^8.7.1"
+    "reactstrap": "^8.7.1",
+    "sal.js": "^0.8.1"
   },
   "devDependencies": {
     "prettier": "2.1.2"

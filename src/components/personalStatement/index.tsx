@@ -15,12 +15,16 @@ const PersonalStatement = (props: IPersonalStatement) => {
         <Heading text={props.text.heading} />
         <div className="container ps-block">
             <div className="row">
-                <div className="col-md-7">
+                <div className="col-md-7" data-sal="zoom-in"
+                        data-sal-delay={`${400}`}
+                        data-sal-easing="ease">
                     <h2>Background</h2>
                     <p> {props.text.background}
                     </p>
                 </div>
-                <div className="col-md-5 objective">
+                <div className="col-md-5 objective" data-sal="zoom-in"
+                        data-sal-delay={`${600}`}
+                        data-sal-easing="ease">
                     <h2>Objective</h2>
                     <span className="quote-marks-open">“</span>
                     <p>
