@@ -1,1 +1,55 @@
 @import "../../settings/media-widths.scss";
+
+.contact-block {
+    background-color: aliceblue;
+    border-radius: 0.5rem;
+    padding: 1.5rem 2rem;
+
+    .contact-cta {
+        font-size: 1rem;
+        font-weight: 500;
+        margin: auto;
+    }
+
+    .contact-message {
+        input {
+            font-size: 0.8rem;
+        }
+        textarea {
+            resize: none;
+            height: 7.45rem;
+            width: 97%;
+            font-size: 0.8rem;
+        }
+        .btn-primary {
+            background: #22313f;
+            color: white;
+            width: 100%;
+            border: none;
+        }
+        &.validated {
+            input.invalid, textarea.invalid {
+                border-color: #dc3545;
+                &:focus {
+                    border-color: #dc3545;
+                    box-shadow: 0 0 0 0.2rem rgba(220,53,69,.25);
+                }
+            }
+            input.valid, textarea.valid {
+                &:focus {
+                    border-color: #28a745;
+                    box-shadow: 0 0 0 0.2rem rgba(40,167,69,.25);
+                }
+            }
+        }
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        .contact-message {
+            textarea {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+        }
+      }
+}

@@ -5,7 +5,7 @@ export default [
     description: `I won first pize in a programming competition that was held at FAST-National University, Lahore in 2016 and was organized by ACM and FAST officials.`,
   },
   {
-    icon: `fa-hand-peace-o`,
+    icon: `fa-code`,
     title: `Completion of Taskbarter during lockdown`,
     description: `I learned a lot during development of the project, from inception of the design, to optimization and deployments. I wrote an article on Dev.to for more details.`,
     linkTitle: 'Visit Blog',

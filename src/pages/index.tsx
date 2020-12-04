@@ -23,6 +23,10 @@ import EducationContent from '../../content/education';
 import ExperienceContent from '../../content/experience';
 import ProjectsContent from '../../content/projects';
 import ProudContent from '../../content/mostProudOf';
+import MoreInfoContent from '../../content/moreinfo';
+import RecommendationContent from '../../content/recommendations';
+import TestimonialContent from '../../content/testimonials';
+import ContactContent from '../../content/contact';
 
 // Assets:
 import downloads from '../../content/downloads';
@@ -49,10 +53,10 @@ export default function IndexRoute(props: PageProps) {
         <Experience text={ExperienceContent} />
         <Projects text={ProjectsContent} />
         <MostProudOf text={ProudContent} />
-        <MoreInfo />
-        <Recommendations />
-        <Testimonials />
-        <Contact />
+        <MoreInfo text = {MoreInfoContent}/>
+        <Recommendations text={RecommendationContent} />
+        <Testimonials text={TestimonialContent} />
+        <Contact text={ContactContent} />
       </div>
     </>
   )
