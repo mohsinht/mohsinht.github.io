@@ -24,7 +24,7 @@ I created this resume using **GatsbyJs** for learning purposes but now as I have
 
 ## Updating Content
 
-I have followed the idea of **Single change, update eveywhere**. You can modify all the content in the `/content/` folder. To add a new content folder, simply add a new typescript file and import it in the `/src/pages/index.tsx/` file.
+I have followed the idea of **Single change, update eveywhere**. You can modify all the content in the `/content/` folder. To add a new content section, simply add a new typescript file and import it in the `/src/pages/index.tsx/` file.
 
 ## Updating Downloads
 
@@ -36,4 +36,4 @@ To deploy your resume, use `gatsby build` command to make a build. Make sure to 
 
 ## Design Changes
 
-To change design of the resume, use `gatsby develop` and change/add a component from `src/components/` folder.
+To change design of the resume, use `gatsby develop` and change/add a component in `src/components/` folder.
