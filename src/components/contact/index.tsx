@@ -30,7 +30,6 @@ const Contact = (props: IProps) => {
             })
                 .then(r => {
                     setSendingState(2);
-                    alert("SENT!");
                 })
                 .catch(r => {
                     setSendingState(3);
