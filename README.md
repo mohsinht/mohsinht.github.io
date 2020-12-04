@@ -24,7 +24,7 @@ I created this resume using **GatsbyJs** for learning purposes but now as I have
 
 ## Updating Content
 
-I have followed the idea of **Single change, update eveywhere**. You can modify all the content in the `/content/` folder. To add a new content folder, simply add a new typescript file and import it in the `/src/pages/index.tsx/` file.
+I have followed the idea of **Single change, update eveywhere**. You can modify all the content in the `/content/` folder. To add a new content section, simply add a new typescript file and import it in the `/src/pages/index.tsx/` file.
 
 ## Updating Downloads
 
