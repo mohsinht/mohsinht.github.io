@@ -27,7 +27,8 @@ const Projects = (props: IProps) => {
         <div className="container projects-block">
             {props.text.main.map((entry, key) => {
                 return <React.Fragment key={key}>
-                    <div className="row projects-row">
+                    <div className="row projects-row" data-sal="zoom-in"
+                        data-sal-easing="ease">
                         <div className="col-md-12">
                             <h2 className="project-title">{entry.title}</h2>
                             {typeof (entry.urlTitle) === 'object' ? <p>{entry.urlTitle.map((comp, index) => { return <React.Fragment key={index}> <a href={entry.url[index].toString()} className="project-url">{comp}</a> {index === entry.urlTitle.length - 1 ? null : <span>& </span>}</React.Fragment> })}</p> : <a href={entry.url.toString()} className="project-url">{entry.urlTitle}</a>}
@@ -47,7 +48,8 @@ const Projects = (props: IProps) => {
 
 
             })}
-            <div className="row projects-row">
+            <div className="row projects-row" data-sal="zoom-in"
+                        data-sal-easing="ease">
                 <div className="col-md-12">
                     <h2 className="project-title">Personal Projects</h2>
                     <p className="project-url"><span>Some projects that I did in my spare time</span></p>
