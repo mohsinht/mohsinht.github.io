@@ -36,4 +36,4 @@ To deploy your resume, use `gatsby build` command to make a build. Make sure to 
 
 ## Design Changes
 
-To change design of the resume, use `gatsby develop` and change/add a component from `src/components/` folder.
+To change design of the resume, use `gatsby develop` and change/add a component in `src/components/` folder.
