@@ -1,0 +1,37 @@
+@import '../../settings/media-widths.scss';
+
+.testimonial-block {
+  background-color: aliceblue;
+  border-radius: 0.5rem;
+  padding: 1.5rem 2rem;
+
+  .test-box {
+    background-color: #e6f2fc;
+    border-radius: 0.4rem;
+    padding: 1rem;
+    box-shadow: 7px 8px 10px 0px #8888881f;
+    margin-bottom: 1rem;
+    border: 3px solid #00000008;
+    &:hover {
+      background-color: #22313f0d;
+      border-radius: 0.5rem;
+      outline: #6b6b6b52 solid 1px;
+    }
+    .title {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #007bff;
+      margin-bottom: 0.5rem;
+    }
+    p.test-details {
+      font-size: 0.8rem;
+    }
+    .test-from {
+      font-size: 0.6rem;
+      font-weight: 500;
+      &:before {
+        content: '\2014 \00A0';
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import '../../settings/media-widths.scss';
+
+.projects-block {
+  background-color: aliceblue;
+  border-radius: 0.5rem;
+  padding: 1.5rem 2rem;
+  p {
+    margin-bottom: 0;
+  }
+  h2.project-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0rem;
+  }
+  .projects-row {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #0000000a;
+  }
+
+  .projects-row:hover {
+    background-color: #22313f0d;
+    border-radius: 0.5rem;
+  }
+  .project-url {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #007bff;
+    margin-bottom: 0.4rem;
+    span {
+      color: initial;
+    }
+  }
+  .project-desription, .project-bullets li {
+    font-size: 0.9rem;
+  }
+
+  .project-desription {
+    margin-top: 0.5rem;
+  }
+
+  .personal-title {
+    font-weight: 500;
+  }
+}

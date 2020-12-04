@@ -1,0 +1,51 @@
+@import '../../settings/media-widths.scss';
+
+.reach-block {
+  margin-top: 2rem;
+  background-color: aliceblue;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  max-width: 1050px;
+  .name {
+    text-transform: uppercase;
+  }
+  .mydp {
+    width: 15.5rem;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+  h1 {
+    font-weight: 900;
+  }
+  .mydp:hover {
+    box-shadow: 0 0 17px 0px #00000087;
+  }
+  .popover {
+    line-height: 1;
+  }
+  .reach-text {
+    line-height: 2.7;
+    font-size: 0.9rem;
+  }
+  @media (max-width: $breakpoint-desktop) {
+    max-width: 950px;
+    .reach-text {
+      line-height: 3.4;
+      font-size: 0.7rem;
+    }
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    max-width: 720px;
+    .mydp {
+      width: 12rem;
+    }
+    .reach-text {
+      line-height: 2.7;
+      font-size: 0.9rem;
+    }
+  }
+  @media (max-width: $breakpoint-mobile) {
+    max-width: 540px;
+  }
+}

@@ -1,0 +1,34 @@
+@import '../../settings/media-widths.scss';
+
+.intro-block {
+  margin-top: 6rem;
+  background-color: aliceblue;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  .name {
+    text-transform: uppercase;
+  }
+  .mydp {
+    width: 15.5rem;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+  h1 {
+    font-weight: 500;
+  }
+  .mydp:hover {
+    box-shadow: 0 0 17px 0px #00000087;
+  }
+  .popover {
+    line-height: 1;
+  }
+  @media (max-width: $breakpoint-tablet) {
+    margin-top: 7rem;
+    .mydp {
+      width: 12rem;
+    }
+  }
+  @media (max-width: $breakpoint-mobile) {
+    margin-top: 10rem;
+  }
+}

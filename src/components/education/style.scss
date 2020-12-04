@@ -1,0 +1,73 @@
+@import '../../settings/media-widths.scss';
+
+.education-block {
+  background-color: aliceblue;
+  border-radius: 0.5rem;
+  padding: 1.5rem 2rem;
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  h2.degree-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+  }
+
+  p.school-name {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #007bff;
+    margin-bottom: 0rem;
+  }
+
+  p.degree-duration {
+    font-size: 0.7rem;
+    margin-bottom: 0rem;
+    font-weight: 500;
+  }
+
+  p.degree-duration .fa-stack {
+    width: 1em;
+    height: 2em;
+    line-height: 1.9em;
+    margin-right: 0.3rem;
+  }
+
+  .marks {
+    border-left: 1.5px solid #22313f;
+    margin-top: 0.4rem;
+
+    .unit {
+      font-size: 0.6rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+      margin-top: 0.2rem;
+    }
+    .total {
+      font-size: 0.8rem;
+    }
+    .obtained {
+      font-weight: 600;
+      color: #007bff;
+      font-size: 1.1rem;
+    }
+  }
+
+  .education-row {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #0000000a;
+  }
+
+  .education-row:hover {
+    background-color: #22313f0d;
+    border-radius: 0.5rem;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    .marks {
+        border-left:none;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+$font-stack: 'Montserrat', sans-serif;
+$primary-color: #22313f;
+
+body {
+  background-color: $primary-color;
+  font-family: $font-stack;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+a {
+  color: #22313f;
+}
+
+hr {
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.container-fluid {
+  margin: auto;
+}
+
+.container {
+  -webkit-transition: border-radius ease 0.5s;
+  /* Safari */
+  transition: border-radius ease 0.5s;
+}
+
+.container:hover {
+  box-shadow: 0px 0px 20px 20px #0000001f;
+  border-radius: 1.3rem;
+  background-color: #e6f2fc;
+}
+
+.container:active {
+  outline-width: 3px;
+  outline-style: solid;
+  outline-color: #007bff;
+  border-radius: 0px;
+}
+
+.icon-popover .popover {
+  line-height: 1;
+}
+
+h2 {
+  font-weight: 400;
+}

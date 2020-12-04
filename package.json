@@ -1,0 +1,44 @@
+{
+  "name": "mohsinht-resume",
+  "private": true,
+  "description": "Resume of Mohsin Hayat",
+  "version": "0.0.1",
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.5.4",
+    "@types/react-helmet": "^6.1.0",
+    "axios": "^0.21.0",
+    "bootstrap": "^4.5.3",
+    "gatsby": "^2.25.1",
+    "gatsby-plugin-react-helmet": "^3.3.14",
+    "gatsby-plugin-sass": "^2.4.2",
+    "gatsby-plugin-scroll-reveal": "0.0.7",
+    "gatsby-plugin-smoothscroll": "^1.2.0",
+    "jquery": "^3.5.1",
+    "node-sass": "^4.14.1",
+    "popper.js": "^1.16.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0",
+    "react-popper": "^2.2.3",
+    "reactstrap": "^8.7.1",
+    "sal.js": "^0.8.1",
+    "smooth-scroll": "^16.1.3"
+  },
+  "devDependencies": {
+    "prettier": "2.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohsinht/mohsinht.github.io"
+  }
+}
