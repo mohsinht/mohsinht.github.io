@@ -11,7 +11,6 @@ const HtmlHead = () => {
                     content="width=device-width, initial-scale=1, shrink-to-fit=no"
                 />
                 <meta name="note" content="environment=development" />
-                <script src="/socket.io/socket.io.js"></script>
                 <title>About Mohsin Hayat</title>
                 <script src="https://use.fontawesome.com/d41a1a9d72.js"></script>
                 <script
