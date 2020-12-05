@@ -53,7 +53,7 @@ export default {
       issueDate: 'June, 2018',
       credentialTitle: 'See Certificate',
       credentialLink:
-        '/downloads/Mohsin Hayat _ CodecademyPart2.pdf',
+        '/downloads/Mohsin Hayat _ Codecademy_Part2.pdf',
     },
   ],
 };
