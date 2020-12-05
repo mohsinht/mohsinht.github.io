@@ -4,7 +4,7 @@ export default [
     details: `During his time, Mohsin produced excellent results in all the assigned tasks. We found him to be hardworking, devoted and a diligent person. For these reasons, I believe that he will prove himself to be an asset to any organization. If you have any question, do not hesitate to contact me.`,
     from: `Hassan Ahmed`,
     fromDesignation: `Executive Director, Rocketbots`,
-    link: `/downloads/Letter%20of%20Recommendation%20-%20Mohsin.pdf`,
+    link: `/downloads/Letter of Recommendation - Mohsin.pdf`,
   },
   {
     company: `SolutionInn LLC`,
