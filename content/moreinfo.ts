@@ -32,7 +32,7 @@ export default {
       title: 'The Ultimate JavaScript Mastery Series - Part 1',
       issuer: 'Code With Mosh',
       issuerLink: 'https://codewithmosh.com/',
-      issueDate: 'June, 2020',
+      issueDate: 'June, 2019',
       credentialTitle: 'See Credentials',
       credentialLink:
         '/downloads/certificate-of-completion-for-javascript-basics.pdf',
@@ -44,7 +44,7 @@ export default {
       issueDate: 'June, 2018',
       credentialTitle: 'See Certificate',
       credentialLink:
-        '/downloads/Mohsin%20Hayat%20_%20Codecademy_Part1.pdf',
+        '/downloads/Mohsin Hayat _ Codecademy_Part1.pdf',
     },
     {
       title: 'Learn React.js: Part II',
@@ -53,7 +53,7 @@ export default {
       issueDate: 'June, 2018',
       credentialTitle: 'See Certificate',
       credentialLink:
-        '/downloads/Mohsin%20Hayat%20_%20Codecademy_Part2.pdf',
+        '/downloads/Mohsin Hayat _ CodecademyPart2.pdf',
     },
   ],
 };
