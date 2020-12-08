@@ -2,19 +2,19 @@ export default [
   {
     icon: `fa-trophy`,
     title: `First in ACM's Programming Competition`,
-    description: `I won first pize in a programming competition that was held at FAST-National University, Lahore in 2016 and was organized by ACM and FAST officials.`,
+    description: `I won the first prize in a programming competition that was held at FAST-National University, Lahore in 2016 and was organized by ACM and FAST officials.`,
   },
   {
     icon: `fa-code`,
-    title: `Completion of Taskbarter during lockdown`,
-    description: `I learned a lot during development of the project, from inception of the design, to optimization and deployments. I wrote an article on Dev.to for more details.`,
+    title: `Completion of Taskbarter during the lockdown`,
+    description: `I learned a lot during the development of the project, from the inception of the design to optimization and deployments. I wrote an article on Dev.to for more details.`,
     linkTitle: 'Visit Blog',
     link: `https://dev.to/mohsinht/taskbarter-exchange-tasks-for-free-3gn1`
   },
   {
     icon: `fa-graduation-cap`,
     title: `Listed in Dean's Honorary List`,
-    description: `I got Third Position in fall 2019 at FAST National University. I am listed in the Dean's Honorary list for getting 3.5+ SGPA and was awarded a bronze medal by the Head of Computer Science department in 2019.`,
+    description: `I got the Third Position in fall 2019 at FAST National University. I am listed in the Dean's Honorary list for getting 3.5+ SGPA and was awarded a bronze medal by the Head of Computer Science department in 2019.`,
   },
   {
     icon: `fa-free-code-camp`,
