@@ -17,10 +17,12 @@ const Contact = (props: IProps) => {
     const [message, setMessage] = useState('');
     const [isValidated, setValidated] = useState(false);
     const [sendingState, setSendingState] = useState(0)
+    const [isSubmitted, setSubmitted] = useState(false);
 
     const onMessageSend = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         event.preventDefault();
         setValidated(true);
+
         if (isEmailCorrect() && isNameCorrect() && isMessageCorrect()) {
             setSendingState(1);
             axios({
@@ -30,6 +32,7 @@ const Contact = (props: IProps) => {
             })
                 .then(r => {
                     setSendingState(2);
+                    setSubmitted(true);
                 })
                 .catch(r => {
                     setSendingState(3);
@@ -55,7 +58,7 @@ const Contact = (props: IProps) => {
     return <>
         <Heading text="Contact" />
 
-        <div id="contact" className="container contact-block mb-5">
+        <div id="contact" className={`container contact-block mb-5 ${isSubmitted ? "after-submission" : null}`}>
             <div className="row">
                 <h2 className="contact-cta text-center">
                     {props.text.cta}
@@ -75,6 +78,18 @@ const Contact = (props: IProps) => {
                     </div>
                 </div>
             </form>
+        </div>
+
+        <div className={`container animated-completion ${isSubmitted ? "after-submission" : null}`}>
+            <div>
+                <div className="success-icon">
+                    <span className="fa-stack fa-2x">
+                        <i className="fa fa-circle-thin fa-stack-2x"></i>
+                        <i className="fa fa-check fa-stack-1x"></i>
+                    </span>
+                </div>
+                <h2 className="success-message">Your message has been successfully sent!</h2>
+            </div>
         </div>
     </>;
 }

@@ -1,55 +1,133 @@
-@import "../../settings/media-widths.scss";
+@import '../../settings/media-widths.scss';
 
 .contact-block {
-    background-color: aliceblue;
-    border-radius: 0.5rem;
-    padding: 1.5rem 2rem;
+  background-color: aliceblue;
+  border-radius: 0.5rem;
+  padding: 1.5rem 2rem;
+  transition: all ease 0.5s, opacity ease 4s;
+  .contact-cta {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: auto;
+  }
 
-    .contact-cta {
-        font-size: 1rem;
-        font-weight: 500;
-        margin: auto;
+  .contact-message {
+    input {
+      font-size: 0.8rem;
     }
-
-    .contact-message {
-        input {
-            font-size: 0.8rem;
-        }
-        textarea {
-            resize: none;
-            height: 7.45rem;
-            width: 97%;
-            font-size: 0.8rem;
-        }
-        .btn-primary {
-            background: #22313f;
-            color: white;
-            width: 100%;
-            border: none;
-        }
-        &.validated {
-            input.invalid, textarea.invalid {
-                border-color: #dc3545;
-                &:focus {
-                    border-color: #dc3545;
-                    box-shadow: 0 0 0 0.2rem rgba(220,53,69,.25);
-                }
-            }
-            input.valid, textarea.valid {
-                &:focus {
-                    border-color: #28a745;
-                    box-shadow: 0 0 0 0.2rem rgba(40,167,69,.25);
-                }
-            }
-        }
+    textarea {
+      resize: none;
+      height: 7.45rem;
+      width: 97%;
+      font-size: 0.8rem;
     }
-
-    @media (max-width: $breakpoint-mobile) {
-        .contact-message {
-            textarea {
-                width: 100%;
-                margin-bottom: 1rem;
-            }
+    .btn-primary {
+      background: #22313f;
+      color: white;
+      width: 100%;
+      border: none;
+    }
+    &.validated {
+      input.invalid,
+      textarea.invalid {
+        border-color: #dc3545;
+        &:focus {
+          border-color: #dc3545;
+          box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
         }
       }
+      input.valid,
+      textarea.valid {
+        &:focus {
+          border-color: #28a745;
+          box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+        }
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    .contact-message {
+      textarea {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &.after-submission {
+      opacity: 0;
+  }
+  &.after-submission:hover {
+    border-radius: 0.5rem;
+  }
 }
+
+.animated-completion {
+  width: 100%;
+  height: 0;
+  background-color: aliceblue;
+  border-radius: 0.5rem;
+  position: relative;
+  margin: auto;
+  transition: all ease 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    border-radius: 0.5rem;
+  }
+
+  .success-icon {
+      color: green;
+      font-size: 1rem;
+      .fa-check {
+        color: green;
+      }
+      animation-name: success-icon-animation;
+      animation-duration: 3s;
+  }
+
+  .success-message {
+      margin-top:1rem;
+      font-size: 1rem;
+      animation-name: success-message-animation;
+      animation-duration: 5s;
+  }
+
+  .success-message,
+  .success-icon {
+      text-align: center;
+    display: none;
+  }
+}
+
+.animated-completion.after-submission {
+  height: 13.45rem;
+  top: -16.4rem;
+  .success-message,
+  .success-icon {
+    display: block;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .animated-completion.after-submission {
+    height: 22.8rem;
+    top: -25.8rem;
+  }
+}
+
+@keyframes success-message-animation {
+    0%   {opacity: 0}
+    25%  {opacity: 0;}
+    50%  {opacity: 0.8;}
+    100% {opacity: 1;}
+  }
+
+  @keyframes success-icon-animation {
+    0%   {opacity: 0}
+    25%  {opacity: 0;}
+    50%  {opacity: 0.5;}
+    100% {opacity: 1;}
+  }
