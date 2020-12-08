@@ -1,6 +1,6 @@
 export default [
   {
-    title: 'Full Stack Developer',
+    title: 'Full-Stack Developer',
     company: 'Tintash',
     url: 'https://www.tintash.com',
     location: 'Lahore, Pakistan',
@@ -9,7 +9,7 @@ export default [
     bullets: [
       '[Jul-Aug] Got training sessions on Python (Django), Clean-Code and Git.',
       '[Aug-Sep] Worked on a web-based game called "Unlocked: Rogue Scientist 1990" by The Escape Game. I developed the dashboard using React/Redux and the backend in NodeJs with Sequelize.',
-      '[Sep-Dec] Developed complete backend of a web based multiplayer game using NodeJS.',
+      '[Sep-Dec] Developed complete backend of a web-based multiplayer game using NodeJS.',
     ],
   },
   {
@@ -35,7 +35,7 @@ export default [
     to: 'September 2018',
     bullets: [
       'Worked on Vue.JS and implemented centralized Vuex store in the web app (app.rocketbots.io)',
-      'Implemented a web chat plugin for websites using PReact, Socket.io & Botman',
+      'Implemented a webchat plugin for websites using PReact, Socket.io & Botman',
       'Fixed daily reported bugs on Jira.',
       'Worked on Dyson node.js server to create JSON APIs for demo bot.',
     ],
@@ -49,7 +49,7 @@ export default [
     from: 'July 2016',
     to: 'September 2018',
     bullets: [
-      'Worked on core Wordpress including theme/plugin customization & bug fixing',
+      'Worked on core WordPress including theme/plugin customization & bug fixing',
       'Remained Top Rated on Upwork in 2016, completing 15+ jobs.',
       'Gained Level 1 on Fiverr.com by completing 25+ jobs.',
       'Worked on UI/UX Design & Site Optimization Tools.',

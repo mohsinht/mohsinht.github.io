@@ -17,7 +17,7 @@ export default {
       urlTitle: ['fiverr.com', 'upwork.com'],
       url: ['https://www.fiverr.com', 'https://www.upwork.com'],
       description: `
-    I've completed more than 40 Wordpress related projects on Upwork and Fiverr. Most of my work is on core Wordpress including theme customization and websites built from scratch. Moreover, I also did some projects on bug-fixing and plugin customization. Other than that, I've done some branding related tasks including Logo Design, UI/UX Design etc.
+    I've completed more than 40 WordPress related projects on Upwork and Fiverr. Most of my work is on core WordPress including theme customization and websites built from scratch. Moreover, I also did some projects on bug-fixing and plugin customization. Other than that, I've done some branding related tasks including Logo Design, UI/UX Design etc.
     `,
     },
     {
@@ -25,7 +25,7 @@ export default {
       urlTitle: 'Unburn.AI',
       url: '#',
       description: `
-    Unburn.AI is a burn degree classifier that can detect whether a skin area is burned or not and if burned, what degree of burn it is (First, Second, Third) using images. I implemented the model in a group of 4 students using Keras, Tensorflow, LabelBox and deep learning neural network called U-NET.
+    Unburn.AI is a burn degree classifier that can detect whether a skin area is burned or not and if burned, what degree of burning it is (First, Second, Third) using images. I implemented the model in a group of 4 students using Keras, Tensorflow, LabelBox and deep learning neural network called U-NET.
     `,
     },
     {
@@ -54,7 +54,7 @@ export default {
       title: 'Purzey Website',
       github: '',
       website: 'https://www.purzey.pk/',
-      detail: 'An eCommerce website to manage orders and provide a campus management system to students. Built using Wordpress and WooCommerce.',
+      detail: 'An eCommerce website to manage orders and provide a campus management system to students. Built using WordPress and WooCommerce.',
     },
     {
       title: 'Spamsort',
