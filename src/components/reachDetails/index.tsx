@@ -40,7 +40,7 @@ const ReachDetails = (props: ReachContent) => {
     return (
         <>
             <div data-sal="flip-up"
-                data-sal-delay="300"
+                data-sal-delay="200"
                 data-sal-easing="ease" className="container reach-block">
                 <div className="row">
                     <div className="col-lg-4">

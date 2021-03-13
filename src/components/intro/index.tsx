@@ -39,7 +39,7 @@ const Intro = (props: IntroContent & DisplayPicture) => {
     return (
 
         <div id="intro" className="container intro-block" data-sal="slide-up"
-            data-sal-delay="300"
+            data-sal-delay="200"
             data-sal-easing="ease">
             <div className="row">
                 <div className="col-md-7">
@@ -113,7 +113,9 @@ const Intro = (props: IntroContent & DisplayPicture) => {
 
                     <br />
                 </div>
-                <div className="col-md-5 image">
+                <div className="col-md-5 image" data-sal="zoom-in"
+            data-sal-delay="300"
+            data-sal-easing="ease">
                     <img
                         className="img-responsive mx-auto d-block mydp rounded-circle"
                         src={props.dp.url}

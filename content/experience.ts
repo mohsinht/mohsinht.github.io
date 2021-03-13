@@ -9,11 +9,12 @@ export default [
     bullets: [
       '[Jul-Aug] Got training sessions on Python (Django), Clean-Code and Git.',
       '[Aug-Sep] Worked on a web-based game called "Unlocked: Rogue Scientist 1990" by The Escape Game. I developed the dashboard using React/Redux and the backend in NodeJs with Sequelize.',
-      '[Sep-Dec] Developed complete backend of a web-based multiplayer game using NodeJS.',
+      '[Sep-Jan] Developed complete backend of a web-based multiplayer game using NodeJS.',
+      '[Jan-Apr] Worked as a Full-Stack developer to implement complete solution of booking and automating remote experiences.'
     ],
   },
   {
-    title: 'Web Developer Intern',
+    title: 'Web Developer Intern (Summers)',
     company: 'SolutionInn',
     url: 'https://www.solutioninn.com',
     location: 'Lahore, Pakistan',
@@ -27,7 +28,7 @@ export default [
     ],
   },
   {
-    title: 'Frontend Developer Intern',
+    title: 'Frontend Developer Intern (Summers)',
     company: 'Respond.io',
     url: 'https://respond.io/',
     location: 'Lahore, Pakistan',

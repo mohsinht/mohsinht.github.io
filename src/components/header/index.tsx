@@ -25,8 +25,8 @@ const Header = (props: IHeaderContent & IResumeFile) => {
     return (
         <>
             <nav id="navbar" className="navbar navbar-light bg-light navbar-fixed-top mh-nav" >
-                <a className="navbar-brand" href="#" data-sal="slide-right"
-                    data-sal-easing="ease">{props.text.title}</a>
+                <a className="navbar-brand" href="#" data-sal="zoom-in"
+                    data-sal-easing="ease" data-sal-delay="300">{props.text.title}</a>
                 <a
                     className="download-phone"
                     href={props.resume.url}
@@ -35,8 +35,8 @@ const Header = (props: IHeaderContent & IResumeFile) => {
                     download
                 >Download PDF version</a
                 >
-                <ul className="nav nav-pills" data-sal="slide-left"
-                    data-sal-easing="ease">
+                <ul className="nav nav-pills" data-sal="zoom-in"
+                    data-sal-easing="ease" data-sal-delay="300">
                     <li className="nav-item" id="intro-link">
                         <a className="nav-link" onClick={() => scrollTo('#intro')} >Intro</a>
                     </li>
