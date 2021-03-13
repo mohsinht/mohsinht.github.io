@@ -1,22 +1,24 @@
-import React, { useState } from "react"
-import "./style.scss"
+import React, { useState } from 'react';
+import './style.scss';
 
 interface IHeading {
-    text: string
+  text: string;
 }
 
 const Heading = (props: IHeading) => {
-    return <div className="heading row text-center">
-        <div className="col-lg-4">
-            <hr />
-        </div>
-        <div id="haeding-text" className="col-lg-4">
-            <h2>{props.text}</h2>
-        </div>
-        <div className="col-lg-4">
-            <hr />
-        </div>
+  return (
+    <div className='heading row text-center'>
+      <div className='col-lg-4'>
+        <hr />
+      </div>
+      <div id='haeding-text' className='col-lg-4'>
+        <h2>{props.text}</h2>
+      </div>
+      <div className='col-lg-4'>
+        <hr />
+      </div>
     </div>
-}
+  );
+};
 
 export default Heading;

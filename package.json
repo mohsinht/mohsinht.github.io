@@ -16,9 +16,9 @@
   "dependencies": {
     "@popperjs/core": "^2.5.4",
     "@types/react-helmet": "^6.1.0",
-    "axios": "^0.21.0",
+    "axios": ">=0.21.1",
     "bootstrap": "^4.5.3",
-    "gatsby": "^2.25.1",
+    "gatsby": "^3.0.4",
     "gatsby-plugin-react-helmet": "^3.3.14",
     "gatsby-plugin-sass": "^2.4.2",
     "gatsby-plugin-scroll-reveal": "0.0.7",

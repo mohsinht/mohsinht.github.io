@@ -4,9 +4,9 @@
   background-color: aliceblue;
   border-radius: 0.5rem;
   padding: 1.5rem 2rem;
- p{
-     margin-bottom: 0;
- }
+  p {
+    margin-bottom: 0;
+  }
   h2.job-title {
     font-size: 1.1rem;
     font-weight: 500;
@@ -30,7 +30,7 @@
     margin-left: 0.4rem;
     padding-left: 0.4rem;
     .fa-stack {
-        line-height: 1.9em;
+      line-height: 1.9em;
     }
   }
 
@@ -38,7 +38,7 @@
     font-size: 0.7rem;
     margin-bottom: 0rem;
     font-weight: 500;
-    margin-top:0.3rem;
+    margin-top: 0.3rem;
   }
 
   p.job-duration .fa-stack {
@@ -59,9 +59,9 @@
   }
 
   .job-description {
-      margin-top: 0.5rem;
-      li {
-          font-size: 0.9rem;
-      }
+    margin-top: 0.5rem;
+    li {
+      font-size: 0.9rem;
+    }
   }
 }

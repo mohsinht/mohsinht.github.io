@@ -56,7 +56,7 @@
   }
 
   &.after-submission {
-      opacity: 0;
+    opacity: 0;
   }
   &.after-submission:hover {
     border-radius: 0.5rem;
@@ -79,25 +79,25 @@
   }
 
   .success-icon {
+    color: green;
+    font-size: 1rem;
+    .fa-check {
       color: green;
-      font-size: 1rem;
-      .fa-check {
-        color: green;
-      }
-      animation-name: success-icon-animation;
-      animation-duration: 3s;
+    }
+    animation-name: success-icon-animation;
+    animation-duration: 3s;
   }
 
   .success-message {
-      margin-top:1rem;
-      font-size: 1rem;
-      animation-name: success-message-animation;
-      animation-duration: 5s;
+    margin-top: 1rem;
+    font-size: 1rem;
+    animation-name: success-message-animation;
+    animation-duration: 5s;
   }
 
   .success-message,
   .success-icon {
-      text-align: center;
+    text-align: center;
     display: none;
   }
 }
@@ -119,15 +119,31 @@
 }
 
 @keyframes success-message-animation {
-    0%   {opacity: 0}
-    25%  {opacity: 0;}
-    50%  {opacity: 0.8;}
-    100% {opacity: 1;}
+  0% {
+    opacity: 0;
   }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
-  @keyframes success-icon-animation {
-    0%   {opacity: 0}
-    25%  {opacity: 0;}
-    50%  {opacity: 0.5;}
-    100% {opacity: 1;}
+@keyframes success-icon-animation {
+  0% {
+    opacity: 0;
   }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
