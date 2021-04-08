@@ -50,9 +50,11 @@ h2 {
   font-weight: 400;
 }
 
-.container-fluid.container-custom-size {
-  max-width: 68rem;
-  .container.reach-block {
-    max-width: 62rem;
+@media (min-width: 1400px) {
+  .container-fluid.container-custom-size {
+    max-width: 68rem;
+    .container.reach-block {
+      max-width: 62rem;
+    }
   }
 }

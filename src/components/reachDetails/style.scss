@@ -6,6 +6,8 @@
   border-radius: 0.5rem;
   padding: 2rem;
   max-width: 1050px;
+  transition-property: opacity,transform,border-radius;
+  transition-delay: 0s !important;
   .name {
     text-transform: uppercase;
   }

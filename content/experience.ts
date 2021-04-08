@@ -5,7 +5,7 @@ export default [
     url: 'https://www.tintash.com',
     location: 'Lahore, Pakistan',
     from: 'July 2020',
-    to: 'Current',
+    to: 'April, 2021',
     bullets: [
       '[Jul-Aug] Got training sessions on Python (Django), Clean-Code and Git.',
       '[Aug-Sep] Worked on a web-based game called "Unlocked: Rogue Scientist 1990" by The Escape Game. I developed the dashboard using React/Redux and the backend in NodeJs with Sequelize.',
