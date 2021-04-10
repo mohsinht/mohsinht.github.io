@@ -35,7 +35,7 @@ const Projects = (props: IProps) => {
                 data-sal-easing='ease'
               >
                 <div className='col-md-12'>
-                  <h2 className='project-title'>{entry.title}</h2>
+                  <h2 className='project-title font-size-5'>{entry.title}</h2>
                   {typeof entry.urlTitle === 'object' ? (
                     <p>
                       {entry.urlTitle.map((comp, index) => {
@@ -44,7 +44,7 @@ const Projects = (props: IProps) => {
                             {' '}
                             <a
                               href={entry.url[index].toString()}
-                              className='project-url'
+                              className='project-url font-size-6'
                             >
                               {comp}
                             </a>{' '}
@@ -60,7 +60,7 @@ const Projects = (props: IProps) => {
                       {entry.urlTitle}
                     </a>
                   )}
-                  <div className='project-desription'>{entry.description}</div>
+                  <div className='project-desription font-size-6'>{entry.description}</div>
                   {entry.bullets ? (
                     <ul className='project-bullets'>
                       {entry.bullets.map((point, index) => {
@@ -79,11 +79,11 @@ const Projects = (props: IProps) => {
           data-sal-easing='ease'
         >
           <div className='col-md-12'>
-            <h2 className='project-title'>Personal Projects</h2>
-            <p className='project-url'>
+            <h2 className='project-title font-size-5'>Personal Projects</h2>
+            <p className='project-url font-size-6'>
               <span>Some projects that I did in my spare time</span>
             </p>
-            <div className='project-desription'>
+            <div className='project-desription font-size-6'>
               <ul>
                 {props.text.personal.map((point, index) => {
                   return (

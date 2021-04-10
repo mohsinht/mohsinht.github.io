@@ -6,20 +6,15 @@
   padding: 1.5rem 2rem;
   transition: all ease 0.5s, opacity ease 4s;
   .contact-cta {
-    font-size: 1rem;
     font-weight: 500;
     margin: auto;
   }
 
   .contact-message {
-    input {
-      font-size: 0.8rem;
-    }
     textarea {
       resize: none;
-      height: 7.45rem;
+      height: 8rem;
       width: 97%;
-      font-size: 0.8rem;
     }
     .btn-primary {
       background: #22313f;
@@ -80,7 +75,6 @@
 
   .success-icon {
     color: green;
-    font-size: 1rem;
     .fa-check {
       color: green;
     }
@@ -90,7 +84,7 @@
 
   .success-message {
     margin-top: 1rem;
-    font-size: 1rem;
+    // // font-size: 1rem;
     animation-name: success-message-animation;
     animation-duration: 5s;
   }

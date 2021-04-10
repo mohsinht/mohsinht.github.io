@@ -8,17 +8,18 @@
     margin-bottom: 0;
   }
   h2.job-title {
-    font-size: 1.1rem;
+    // font-size: 1.1rem;
     font-weight: 500;
-    margin-bottom: 0rem;
+    margin-bottom: 0.2rem;
   }
 
   a.company-name,
   span.company-name {
-    font-size: 1rem;
+    // font-size: 1rem;
     font-weight: 500;
     color: #007bff;
     margin-bottom: 0.4rem;
+    margin-top: 0.8rem;
     span {
       color: initial;
     }
@@ -35,10 +36,10 @@
   }
 
   p.job-duration {
-    font-size: 0.7rem;
+    // font-size: 0.7rem;
     margin-bottom: 0rem;
     font-weight: 500;
-    margin-top: 0.3rem;
+    margin-top: 0.15rem;
   }
 
   p.job-duration .fa-stack {
@@ -61,7 +62,7 @@
   .job-description {
     margin-top: 0.5rem;
     li {
-      font-size: 0.9rem;
+      // font-size: 0.9rem;
     }
   }
 }

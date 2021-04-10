@@ -11,7 +11,7 @@ const Heading = (props: IHeading) => {
       <div className='col-lg-4'>
         <hr />
       </div>
-      <div id='haeding-text' className='col-lg-4'>
+      <div id='heading-text' className='col-lg-4 font-size-6'>
         <h2>{props.text}</h2>
       </div>
       <div className='col-lg-4'>

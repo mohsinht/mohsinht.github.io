@@ -70,7 +70,9 @@ const Contact = (props: IProps) => {
         }`}
       >
         <div className='row'>
-          <h2 className='contact-cta text-center'>{props.text.cta}</h2>
+          <h2 className='contact-cta text-center  font-size-5'>
+            {props.text.cta}
+          </h2>
         </div>
         <form className='mt-4'>
           <div
@@ -78,7 +80,7 @@ const Contact = (props: IProps) => {
               isValidated ? 'validated' : 'not-validated'
             }`}
           >
-            <div className='col-md-7'>
+            <div className='col-md-7 font-size-6'>
               <textarea
                 name='message'
                 value={message}
@@ -86,7 +88,7 @@ const Contact = (props: IProps) => {
                   setMessage(e.target.value);
                 }}
                 rows={50}
-                className={`form-control ${
+                className={`form-control font-size-6 ${
                   isMessageCorrect() ? 'valid' : 'invalid'
                 }`}
                 placeholder='Your messages'
@@ -99,7 +101,7 @@ const Contact = (props: IProps) => {
                   setName(e.target.value);
                 }}
                 type='text'
-                className={`form-control ${
+                className={`form-control font-size-6 ${
                   isNameCorrect() ? 'valid' : 'invalid'
                 }`}
                 placeholder='Your Name'
@@ -111,13 +113,13 @@ const Contact = (props: IProps) => {
                   setEmail(e.target.value);
                 }}
                 type='text'
-                className={`form-control mt-2 ${
+                className={`form-control font-size-6 mt-2 ${
                   isEmailCorrect() ? 'valid' : 'invalid'
                 }`}
                 placeholder='Your Email'
               />
               <button
-                className='btn btn-primary mt-2'
+                className='btn btn-primary mt-2 font-size-6'
                 onClick={onMessageSend}
                 disabled={sendingState === 1 || sendingState === 2}
               >

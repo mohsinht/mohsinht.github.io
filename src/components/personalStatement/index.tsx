@@ -22,8 +22,8 @@ const PersonalStatement = (props: IPersonalStatement) => {
             data-sal-delay={`${400}`}
             data-sal-easing='ease'
           >
-            <h2>Background</h2>
-            <p> {props.text.background}</p>
+            <h2 className="font-size-5">Background</h2>
+            <p className="font-size-6"> {props.text.background}</p>
           </div>
           <div
             className='col-md-5 objective'
@@ -31,9 +31,9 @@ const PersonalStatement = (props: IPersonalStatement) => {
             data-sal-delay={`${600}`}
             data-sal-easing='ease'
           >
-            <h2>Objective</h2>
+            <h2 className="font-size-5">Objective</h2>
             <span className='quote-marks-open'>“</span>
-            <p>{props.text.objective}</p>
+            <p className="font-size-6">{props.text.objective}</p>
             <span className='quote-marks-close'>”</span>
           </div>
         </div>

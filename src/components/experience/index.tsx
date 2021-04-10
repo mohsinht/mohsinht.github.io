@@ -30,7 +30,7 @@ const Experience = (props: IProps) => {
                 data-sal-easing='ease'
               >
                 <div className='col-md-12'>
-                  <h2 className='job-title'>{entry.title}</h2>
+                  <h2 className='job-title font-size-5'>{entry.title}</h2>
                   {typeof entry.company === 'object' ? (
                     <p>
                       {entry.company.map((comp, index) => {
@@ -39,7 +39,7 @@ const Experience = (props: IProps) => {
                             {' '}
                             <a
                               href={entry.url[index].toString()}
-                              className='company-name'
+                              className='company-name font-size-6'
                             >
                               {comp}
                             </a>{' '}
@@ -51,11 +51,11 @@ const Experience = (props: IProps) => {
                       })}
                     </p>
                   ) : (
-                    <a href={entry.url.toString()} className='company-name'>
+                    <a href={entry.url.toString()} className='company-name font-size-6'>
                       {entry.company}
                     </a>
                   )}
-                  <p className='job-duration'>
+                  <p className='job-duration font-size-7'>
                     <span className='fa-stack fa-sm'>
                       <i className='fa fa-calendar fa-stack-1x'></i>
                     </span>
@@ -68,7 +68,7 @@ const Experience = (props: IProps) => {
                     </span>
                   </p>
 
-                  <ul className='job-description'>
+                  <ul className='job-description font-size-6'>
                     {entry.bullets.map((point, index) => {
                       return <li key={index}>{point}</li>;
                     })}

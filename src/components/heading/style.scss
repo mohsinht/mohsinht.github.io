@@ -5,13 +5,13 @@
     border-top: 1px solid rgba(255, 255, 255, 0.24);
   }
   h2 {
-    font-size: 1.6787rem;
+    font-size: 1.563rem;
     text-transform: uppercase;
     color: aliceblue;
   }
   @media (max-width: $breakpoint-desktop) {
     h2 {
-      font-size: 1.5rem;
+      // font-size: 1.5rem;
     }
     hr {
       display: none;

@@ -29,10 +29,10 @@ const Recommendations = (props: IProps) => {
               >
                 <div className='rec-box'>
                   {' '}
-                  <p className='company'>{rec.company}</p>{' '}
-                  <p className='rec-details'>{rec.details}</p>
+                  <p className='company font-size-6'>{rec.company}</p>{' '}
+                  <p className='rec-details font-size-7'>{rec.details}</p>
                   <div>
-                    <span className='rec-from'>
+                    <span className='rec-from font-size-8'>
                       {rec.from} ({rec.fromDesignation})
                       <a className='letter-link' href={rec.link}>
                         View letter

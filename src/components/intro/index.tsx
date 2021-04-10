@@ -47,8 +47,8 @@ const Intro = (props: IntroContent & DisplayPicture) => {
       <div className='row'>
         <div className='col-md-7'>
           <br />
-          <h1 className='text-center name'>{`${props.text.firstName} ${props.text.lastName}`}</h1>
-          <h2 className='text-center'>{props.text.tagline}</h2>
+          <h1 className='text-center name font-size-2'>{`${props.text.firstName} ${props.text.lastName}`}</h1>
+          <h2 className='text-center font-size-3'>{props.text.tagline}</h2>
 
           <br />
           <div className='text-center'>

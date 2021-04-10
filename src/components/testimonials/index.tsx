@@ -40,10 +40,10 @@ const Testimonials = (props: IProps) => {
                         data-sal-easing='ease'
                       >
                         {' '}
-                        <p className='title'>{test.title}</p>{' '}
-                        <p className='test-details'>{test.content}</p>
+                        <p className='title font-size-6'>{test.title}</p>{' '}
+                        <p className='test-details font-size-7'>{test.content}</p>
                         <div>
-                          <span className='test-from'>
+                          <span className='test-from font-size-8'>
                             {test.from} ({test.fromCompany})
                           </span>
                         </div>

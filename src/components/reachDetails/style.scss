@@ -4,7 +4,7 @@
   margin-top: 2rem;
   background-color: aliceblue;
   border-radius: 0.5rem;
-  padding: 2rem;
+  padding: 0.8rem;
   max-width: 1050px;
   transition-property: opacity,transform,border-radius;
   transition-delay: 0s !important;
@@ -16,24 +16,33 @@
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
   }
+  .reach-item {
+    padding: 1rem;
+    cursor: pointer;
+  }
+
   h1 {
     font-weight: 900;
   }
-  .mydp:hover {
-    box-shadow: 0 0 17px 0px #00000087;
+  .reach-item:hover {
+    background-color: #22313f0d;
+    border-radius: 0.5rem;
+    .reach-icon {
+      color: #0056b3;
+    }
   }
   .popover {
     line-height: 1;
   }
   .reach-text {
     line-height: 2.7;
-    font-size: 0.9rem;
+    // font-size: 0.9rem;
   }
   @media (max-width: $breakpoint-desktop) {
     max-width: 950px;
     .reach-text {
       line-height: 3.4;
-      font-size: 0.7rem;
+      // font-size: 0.7rem;
     }
   }
 
@@ -44,7 +53,7 @@
     }
     .reach-text {
       line-height: 2.7;
-      font-size: 0.9rem;
+      // font-size: 0.9rem;
     }
   }
   @media (max-width: $breakpoint-mobile) {

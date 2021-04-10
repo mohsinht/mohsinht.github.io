@@ -26,7 +26,7 @@ const Header = (props: IHeaderContent & IResumeFile) => {
     <>
       <nav
         id='navbar'
-        className='navbar navbar-light bg-light navbar-fixed-top mh-nav'
+        className='navbar navbar-light bg-light navbar-fixed-top mh-nav font-size-6'
       >
         <a
           className='navbar-brand'

@@ -58,3 +58,40 @@ h2 {
     }
   }
 }
+
+/* 
+  The following style is calculated using Golden Ratio.
+  The base font-size is 16px
+  To calculate it, I used https://type-scale.com
+*/
+html {
+  font-size: 16px; // base font
+}
+.font-size-1 {
+  font-size: 3.052rem
+}
+.font-size-2 {
+  font-size: 2.441rem;
+}
+.font-size-3 {
+  font-size: 1.953rem;
+}
+.font-size-4 {
+  font-size: 1.563rem;
+}
+.font-size-5 {
+  font-size: 1.25rem;
+}
+.font-size-6 {
+  font-size: 1rem;
+}
+.font-size-7 {
+  font-size: 0.8rem;
+}
+.font-size-8 {
+  font-size: 0.64rem;
+}
+.font-size-9 {
+  font-size: 0.512rem;
+}
+

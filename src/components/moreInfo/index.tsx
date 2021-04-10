@@ -24,13 +24,13 @@ const MoreInfo = (props: IProps) => {
       <div className='container more-block'>
         <div className='row more-row'>
           <div className='col-md-6' data-sal='zoom-in' data-sal-easing='ease'>
-            <h2 className='more-heading'>Certifications</h2>
+            <h2 className='more-heading font-size-5'>Certifications</h2>
             <div className='certifications'>
               {props.text.certifications.map((certificate, index) => {
                 return (
                   <div className='certificate' key={index}>
-                    <h2 className='title'>{certificate.title}</h2>
-                    <div className='certificate-sub'>
+                    <h2 className='title font-size-6'>{certificate.title}</h2>
+                    <div className='certificate-sub font-size-7'>
                       <a href={certificate.issuerLink} className='issuer-link'>
                         {certificate.issuer}
                       </a>{' '}
@@ -54,11 +54,11 @@ const MoreInfo = (props: IProps) => {
             data-sal='zoom-in'
             data-sal-easing='ease'
           >
-            <h2 className='more-heading'>Technologies</h2>
+            <h2 className='more-heading font-size-5'>Technologies</h2>
             <div className='technologies'>
               {props.text.technologies.map((tech, index) => {
                 return (
-                  <span className='badge tech-badge' key={index}>
+                  <span className='badge tech-badge font-size-7' key={index}>
                     {tech}
                   </span>
                 );

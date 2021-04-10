@@ -47,7 +47,7 @@ export default function IndexRoute(props: PageProps) {
       <Header text={HeaderContent} resume={downloads.resume} />
       <div className='container-fluid container-custom-size'>
         <Intro text={IntroContent} dp={assets.displayPicture} />
-        <ReachDetails text={ReachContent} />
+        <ReachDetails items={ReachContent} />
         <PersonalStatement text={PersonalStatementContent} />
         <Education text={EducationContent} />
         <Experience text={ExperienceContent} />
