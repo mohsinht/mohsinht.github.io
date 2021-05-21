@@ -18,7 +18,6 @@ const Testimonials = (props: IProps) => {
     for (let i in arr.text) {
       newArr.push({ ...arr.text[i], index: i });
     }
-    console.log(newArr);
     return { text: newArr };
   };
 
