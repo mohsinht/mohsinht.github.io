@@ -1,5 +1,18 @@
 export default [
   {
+    title: 'Software Engineer',
+    company: 'Awell Health',
+    url: 'https://www.awellhealth.com',
+    location: 'Remote',
+    from: 'April 2021',
+    to: 'present',
+    bullets: [
+      'At Awell, I work on multiple applications that help Clinical Users in building digital care pathways. These applications include Clinical App (for Clinical Users), Care App (For Patients), Pathway Studio (For building next-gen pathways)',
+      'Languages: Javascript/Typescript',
+      'Tools/Frameworks: Meteor, NextJS, Docker & Kubernetes'
+    ],
+  },
+  {
     title: 'Full-Stack Developer',
     company: 'Tintash',
     url: 'https://www.tintash.com',
