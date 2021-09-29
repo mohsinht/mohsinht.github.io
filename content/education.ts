@@ -4,6 +4,7 @@ export default [
     subject: "Computer Science",
     school:
       "National University of Computer and Emerging Sciences (FAST-NUCES), Lahore",
+    schoolShort: 'FAST-NUCES, Lahore',
     marks: {
       unit: "CGPA",
       total: 4.0,

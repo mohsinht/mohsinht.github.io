@@ -62,6 +62,7 @@ export default [
     location: "Lahore, Pakistan",
     from: "July 2016",
     to: "September 2018",
+    hideInOnePage: true,
     bullets: [
       "Worked on core WordPress including theme/plugin customization & bug fixing",
       "Remained Top Rated on Upwork in 2016, completing 15+ jobs.",

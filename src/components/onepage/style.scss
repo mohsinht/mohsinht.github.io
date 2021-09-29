@@ -1,0 +1,14 @@
+@import '../../settings/media-widths.scss';
+
+.one-page-resume {
+  margin-top: 6rem;
+  background-color: aliceblue;
+  border-radius: 0.5rem;
+  padding: 2rem 4rem;
+  transition-property: opacity,transform,border-radius;
+  transition-delay: 0s !important;
+  margin-bottom: 6rem;
+  .img-responsive {
+    width: 5.5rem;
+  }
+}
