@@ -3,6 +3,7 @@
 I created this resume using **GatsbyJs** for learning purposes but now as I have open-sourced it completely, I'm excited to share the code structure and implementation details. Feel free to fork this and change it the way you want.
 
 ## Folder Structure
+
     .
     ├── node_modules
     ├── src

@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import './style.scss';
-import { Popover, PopoverBody } from 'reactstrap';
-import { IReachItem } from './interface/IReachItem';
-import ReachItem from './ReachItem';
+import React, { useState } from "react";
+import "./style.scss";
+import { Popover, PopoverBody } from "reactstrap";
+import { IReachItem } from "./interface/IReachItem";
+import ReachItem from "./ReachItem";
 interface IReachContent {
   items: IReachItem[];
 }
@@ -25,15 +25,15 @@ const ReachDetails = (props: IReachContent) => {
   return (
     <>
       <div
-        data-sal='flip-up'
-        data-sal-delay='200'
-        data-sal-easing='ease'
-        className='container reach-block font-size-6'
+        data-sal="flip-up"
+        data-sal-delay="200"
+        data-sal-easing="ease"
+        className="container reach-block font-size-6"
       >
-        <div className='row px-2'>
+        <div className="row px-2">
           {props.items.map((item, key) => {
             return (
-              <div key={key} className='col-lg-4'>
+              <div key={key} className="col-lg-4">
                 <ReachItem {...item} />
               </div>
             );

@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import Heading from '../heading';
-import './style.scss';
+import React, { useState } from "react";
+import Heading from "../heading";
+import "./style.scss";
 
 interface IProps {
   text: {
@@ -26,24 +26,26 @@ const Testimonials = (props: IProps) => {
     <>
       <Heading text="Clients' Testimonials" />
 
-      <div className='container testimonial-block'>
-        <div className='row'>
+      <div className="container testimonial-block">
+        <div className="row">
           {[1, 2, 3].map((colNum, key) => {
             return (
-              <div key={key} className='col-md-4'>
+              <div key={key} className="col-md-4">
                 {parsedText(props).text.map((test, index) => {
                   return test.index % 3 === colNum - 1 ? (
                     <span key={index}>
                       <div
-                        className='test-box'
-                        data-sal='zoom-in'
-                        data-sal-easing='ease'
+                        className="test-box"
+                        data-sal="zoom-in"
+                        data-sal-easing="ease"
                       >
-                        {' '}
-                        <p className='title font-size-6'>{test.title}</p>{' '}
-                        <p className='test-details font-size-7'>{test.content}</p>
+                        {" "}
+                        <p className="title font-size-6">{test.title}</p>{" "}
+                        <p className="test-details font-size-7">
+                          {test.content}
+                        </p>
                         <div>
-                          <span className='test-from font-size-8'>
+                          <span className="test-from font-size-8">
                             {test.from} ({test.fromCompany})
                           </span>
                         </div>

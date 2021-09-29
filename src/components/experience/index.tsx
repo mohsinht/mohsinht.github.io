@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import Heading from '../heading';
-import './style.scss';
+import React, { useState } from "react";
+import Heading from "../heading";
+import "./style.scss";
 
 interface IProps {
   text: {
@@ -17,32 +17,32 @@ interface IProps {
 const Experience = (props: IProps) => {
   return (
     <>
-      <div id='experience' />
-      <Heading text='Experience' />
+      <div id="experience" />
+      <Heading text="Experience" />
 
-      <div className='container experience-block'>
+      <div className="container experience-block">
         {props.text.map((entry, key) => {
           return (
             <React.Fragment key={key}>
               <div
-                className='row experience-row'
-                data-sal='zoom-in'
-                data-sal-easing='ease'
+                className="row experience-row"
+                data-sal="zoom-in"
+                data-sal-easing="ease"
               >
-                <div className='col-md-12'>
-                  <h2 className='job-title font-size-5'>{entry.title}</h2>
-                  {typeof entry.company === 'object' ? (
+                <div className="col-md-12">
+                  <h2 className="job-title font-size-5">{entry.title}</h2>
+                  {typeof entry.company === "object" ? (
                     <p>
                       {entry.company.map((comp, index) => {
                         return (
                           <React.Fragment key={index}>
-                            {' '}
+                            {" "}
                             <a
                               href={entry.url[index].toString()}
-                              className='company-name font-size-6'
+                              className="company-name font-size-6"
                             >
                               {comp}
-                            </a>{' '}
+                            </a>{" "}
                             {index === entry.company.length - 1 ? null : (
                               <span>& </span>
                             )}
@@ -51,24 +51,27 @@ const Experience = (props: IProps) => {
                       })}
                     </p>
                   ) : (
-                    <a href={entry.url.toString()} className='company-name font-size-6'>
+                    <a
+                      href={entry.url.toString()}
+                      className="company-name font-size-6"
+                    >
                       {entry.company}
                     </a>
                   )}
-                  <p className='job-duration font-size-7'>
-                    <span className='fa-stack fa-sm'>
-                      <i className='fa fa-calendar fa-stack-1x'></i>
+                  <p className="job-duration font-size-7">
+                    <span className="fa-stack fa-sm">
+                      <i className="fa fa-calendar fa-stack-1x"></i>
                     </span>
-                    {entry.from} – {entry.to}{' '}
-                    <span className='job-location'>
-                      <span className='fa-stack fa-sm'>
-                        <i className='fa fa-map-marker fa-stack-1x'></i>
+                    {entry.from} – {entry.to}{" "}
+                    <span className="job-location">
+                      <span className="fa-stack fa-sm">
+                        <i className="fa fa-map-marker fa-stack-1x"></i>
                       </span>
                       {entry.location}
                     </span>
                   </p>
 
-                  <ul className='job-description font-size-6'>
+                  <ul className="job-description font-size-6">
                     {entry.bullets.map((point, index) => {
                       return <li key={index}>{point}</li>;
                     })}

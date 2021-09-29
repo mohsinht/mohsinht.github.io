@@ -1,3 +1,3 @@
 export default {
-    title: "Mohsin's Resumé"
-}
+  title: "Mohsin's Resumé",
+};

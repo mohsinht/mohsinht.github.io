@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import Heading from '../heading';
-import './style.scss';
-import axios from 'axios';
+import React, { useState } from "react";
+import Heading from "../heading";
+import "./style.scss";
+import axios from "axios";
 
 interface IProps {
   text: {
@@ -10,9 +10,9 @@ interface IProps {
 }
 
 const Contact = (props: IProps) => {
-  const [email, setEmail] = useState('');
-  const [name, setName] = useState('');
-  const [message, setMessage] = useState('');
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
   const [isValidated, setValidated] = useState(false);
   const [sendingState, setSendingState] = useState(0);
   const [isSubmitted, setSubmitted] = useState(false);
@@ -26,13 +26,13 @@ const Contact = (props: IProps) => {
     if (isEmailCorrect() && isNameCorrect() && isMessageCorrect()) {
       setSendingState(1);
       axios({
-        method: 'post',
-        url: 'https://formspree.io/f/mohsinhayat104@gmail.com',
+        method: "post",
+        url: "https://formspree.io/f/mohsinhayat104@gmail.com",
         data: {
           email,
           message: `${name} sent this message, "${message}".`,
-          name
-        }
+          name,
+        },
       })
         .then((res) => {
           setSendingState(2);
@@ -61,75 +61,75 @@ const Contact = (props: IProps) => {
 
   return (
     <>
-      <Heading text='Contact' />
+      <Heading text="Contact" />
 
       <div
-        id='contact'
+        id="contact"
         className={`container contact-block mb-5 ${
-          isSubmitted ? 'after-submission' : null
+          isSubmitted ? "after-submission" : null
         }`}
       >
-        <div className='row'>
-          <h2 className='contact-cta text-center  font-size-5'>
+        <div className="row">
+          <h2 className="contact-cta text-center  font-size-5">
             {props.text.cta}
           </h2>
         </div>
-        <form className='mt-4'>
+        <form className="mt-4">
           <div
             className={`form-row contact-message ${
-              isValidated ? 'validated' : 'not-validated'
+              isValidated ? "validated" : "not-validated"
             }`}
           >
-            <div className='col-md-7 font-size-6'>
+            <div className="col-md-7 font-size-6">
               <textarea
-                name='message'
+                name="message"
                 value={message}
                 onChange={(e) => {
                   setMessage(e.target.value);
                 }}
                 rows={50}
                 className={`form-control font-size-6 ${
-                  isMessageCorrect() ? 'valid' : 'invalid'
+                  isMessageCorrect() ? "valid" : "invalid"
                 }`}
-                placeholder='Your messages'
+                placeholder="Your messages"
               />
             </div>
-            <div className='col-md-5'>
+            <div className="col-md-5">
               <input
                 value={name}
                 onChange={(e) => {
                   setName(e.target.value);
                 }}
-                type='text'
+                type="text"
                 className={`form-control font-size-6 ${
-                  isNameCorrect() ? 'valid' : 'invalid'
+                  isNameCorrect() ? "valid" : "invalid"
                 }`}
-                placeholder='Your Name'
+                placeholder="Your Name"
               />
               <input
-                name='_replyto'
+                name="_replyto"
                 value={email}
                 onChange={(e) => {
                   setEmail(e.target.value);
                 }}
-                type='text'
+                type="text"
                 className={`form-control font-size-6 mt-2 ${
-                  isEmailCorrect() ? 'valid' : 'invalid'
+                  isEmailCorrect() ? "valid" : "invalid"
                 }`}
-                placeholder='Your Email'
+                placeholder="Your Email"
               />
               <button
-                className='btn btn-primary mt-2 font-size-6'
+                className="btn btn-primary mt-2 font-size-6"
                 onClick={onMessageSend}
                 disabled={sendingState === 1 || sendingState === 2}
               >
                 {sendingState === 0
-                  ? 'Submit'
+                  ? "Submit"
                   : sendingState === 1
-                  ? 'Sending...'
+                  ? "Sending..."
                   : sendingState === 2
-                  ? 'Sent!'
-                  : 'Retry'}
+                  ? "Sent!"
+                  : "Retry"}
               </button>
             </div>
           </div>
@@ -138,17 +138,17 @@ const Contact = (props: IProps) => {
 
       <div
         className={`container animated-completion ${
-          isSubmitted ? 'after-submission' : null
+          isSubmitted ? "after-submission" : null
         }`}
       >
         <div>
-          <div className='success-icon'>
-            <span className='fa-stack fa-2x'>
-              <i className='fa fa-circle-thin fa-stack-2x'></i>
-              <i className='fa fa-check fa-stack-1x'></i>
+          <div className="success-icon">
+            <span className="fa-stack fa-2x">
+              <i className="fa fa-circle-thin fa-stack-2x"></i>
+              <i className="fa fa-check fa-stack-1x"></i>
             </span>
           </div>
-          <h2 className='success-message'>
+          <h2 className="success-message">
             Your message has been successfully sent!
           </h2>
         </div>

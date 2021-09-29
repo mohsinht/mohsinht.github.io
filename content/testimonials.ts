@@ -40,5 +40,5 @@ export default [
     content: `Thanks again Mohsin! Looking forward to working together again!`,
     from: `QuickHouseCA`,
     fromCompany: `Upwork`,
-  }
+  },
 ];

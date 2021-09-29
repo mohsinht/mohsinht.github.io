@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import Heading from '../heading';
-import './style.scss';
+import React, { useState } from "react";
+import Heading from "../heading";
+import "./style.scss";
 
 interface IProps {
   text: {
@@ -23,31 +23,31 @@ interface IProps {
 const Projects = (props: IProps) => {
   return (
     <>
-      <Heading text='Projects' />
+      <Heading text="Projects" />
 
-      <div className='container projects-block'>
+      <div className="container projects-block">
         {props.text.main.map((entry, key) => {
           return (
             <React.Fragment key={key}>
               <div
-                className='row projects-row'
-                data-sal='zoom-in'
-                data-sal-easing='ease'
+                className="row projects-row"
+                data-sal="zoom-in"
+                data-sal-easing="ease"
               >
-                <div className='col-md-12'>
-                  <h2 className='project-title font-size-5'>{entry.title}</h2>
-                  {typeof entry.urlTitle === 'object' ? (
+                <div className="col-md-12">
+                  <h2 className="project-title font-size-5">{entry.title}</h2>
+                  {typeof entry.urlTitle === "object" ? (
                     <p>
                       {entry.urlTitle.map((comp, index) => {
                         return (
                           <React.Fragment key={index}>
-                            {' '}
+                            {" "}
                             <a
                               href={entry.url[index].toString()}
-                              className='project-url font-size-6'
+                              className="project-url font-size-6"
                             >
                               {comp}
-                            </a>{' '}
+                            </a>{" "}
                             {index === entry.urlTitle.length - 1 ? null : (
                               <span>& </span>
                             )}
@@ -56,13 +56,15 @@ const Projects = (props: IProps) => {
                       })}
                     </p>
                   ) : (
-                    <a href={entry.url.toString()} className='project-url'>
+                    <a href={entry.url.toString()} className="project-url">
                       {entry.urlTitle}
                     </a>
                   )}
-                  <div className='project-desription font-size-6'>{entry.description}</div>
+                  <div className="project-desription font-size-6">
+                    {entry.description}
+                  </div>
                   {entry.bullets ? (
-                    <ul className='project-bullets'>
+                    <ul className="project-bullets">
                       {entry.bullets.map((point, index) => {
                         return <li key={index}>{point}</li>;
                       })}
@@ -74,28 +76,28 @@ const Projects = (props: IProps) => {
           );
         })}
         <div
-          className='row projects-row'
-          data-sal='zoom-in'
-          data-sal-easing='ease'
+          className="row projects-row"
+          data-sal="zoom-in"
+          data-sal-easing="ease"
         >
-          <div className='col-md-12'>
-            <h2 className='project-title font-size-5'>Personal Projects</h2>
-            <p className='project-url font-size-6'>
+          <div className="col-md-12">
+            <h2 className="project-title font-size-5">Personal Projects</h2>
+            <p className="project-url font-size-6">
               <span>Some projects that I did in my spare time</span>
             </p>
-            <div className='project-desription font-size-6'>
+            <div className="project-desription font-size-6">
               <ul>
                 {props.text.personal.map((point, index) => {
                   return (
                     <li key={index}>
-                      <span className='personal-title'>{point.title} – </span>{' '}
-                      <span className=''>{point.detail}</span> (
-                      {point.github !== '' && point.website !== '' ? (
+                      <span className="personal-title">{point.title} – </span>{" "}
+                      <span className="">{point.detail}</span> (
+                      {point.github !== "" && point.website !== "" ? (
                         <span>
-                          <a href={point.github}>Github</a> |{' '}
+                          <a href={point.github}>Github</a> |{" "}
                           <a href={point.website}>Website</a>
                         </span>
-                      ) : point.github !== '' ? (
+                      ) : point.github !== "" ? (
                         <a href={point.github}>Github</a>
                       ) : point.website ? (
                         <a href={point.website}>Website</a>

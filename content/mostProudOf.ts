@@ -8,8 +8,8 @@ export default [
     icon: `fa-code`,
     title: `Completion of Taskbarter during the lockdown`,
     description: `I learned a lot during the development of the project, from the inception of the design to optimization and deployments. I wrote an article on Dev.to for more details.`,
-    linkTitle: 'Visit Blog',
-    link: `https://dev.to/mohsinht/taskbarter-exchange-tasks-for-free-3gn1`
+    linkTitle: "Visit Blog",
+    link: `https://dev.to/mohsinht/taskbarter-exchange-tasks-for-free-3gn1`,
   },
   {
     icon: `fa-graduation-cap`,

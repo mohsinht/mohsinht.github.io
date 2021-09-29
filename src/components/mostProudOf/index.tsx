@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import Heading from '../heading';
-import './style.scss';
+import React, { useState } from "react";
+import Heading from "../heading";
+import "./style.scss";
 
 interface IProps {
   text: {
@@ -15,29 +15,31 @@ interface IProps {
 const MostProudOf = (props: IProps) => {
   return (
     <>
-      <Heading text='Most Proud Of' />
+      <Heading text="Most Proud Of" />
 
-      <div className='container proud-block'>
+      <div className="container proud-block">
         {props.text.map((entry, key) => {
           return (
             <React.Fragment key={key}>
               <div
-                className='row proud-row'
-                data-sal='zoom-in'
-                data-sal-easing='ease'
+                className="row proud-row"
+                data-sal="zoom-in"
+                data-sal-easing="ease"
               >
-                <div className='col-md-12'>
-                  <h2 className='proud-title font-size-5'>
-                    <span className='fa-stack fa-sm'>
+                <div className="col-md-12">
+                  <h2 className="proud-title font-size-5">
+                    <span className="fa-stack fa-sm">
                       <i className={`fa ${entry.icon} fa-stack-1x`}></i>
                     </span>
                     {entry.title}
                   </h2>
-                  <p className='proud-description font-size-6'>{entry.description}</p>
+                  <p className="proud-description font-size-6">
+                    {entry.description}
+                  </p>
                   {entry.link ? (
                     <span>
                       (
-                      <a href={entry.link} className='proud-link font-size-6'>
+                      <a href={entry.link} className="proud-link font-size-6">
                         {entry.linkTitle}
                       </a>
                       )
