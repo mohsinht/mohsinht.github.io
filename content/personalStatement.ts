@@ -1,7 +1,7 @@
 export default {
   background:
-    "I'm a passionate full-stack web developer with extensive experience in the design and development of multiple web apps. I've done internships, freelancing and development of some personal projects. I've won a programming competition and I've been top rated on multiple freelancing platforms. I'm also listed in the dean's honorary list of my university.",
+    "I'm a passionate full stack web developer with extensive experience in frontend, backend, CI/CD pipelines and scaling of multiple web applications. I've more than two years of experience of working with remote teams. I've done internships, freelancing and multiple personal projects. I've won first prize in a university-level programming competition and I've been part of the dean's list of FAST-NUCES.",
   objective:
-    "To become a part of an organization where my curricular background is utilized to the fullest and opportunities to grow and learn are intact.",
+    "I'm more inclined towards engineering & architectural part of a scalable app and I love problem solving. I want to take path of a Software Architect.",
   heading: "Personal Statement",
 };
